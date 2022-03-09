@@ -2,6 +2,7 @@
 将70-ttyusb.rules放到/etc/udev/rules.d/目录下，重新插入串口
 ```shell
 sudo usermod -aG dialout <YOUR non-root USER>
+```
 
 
 # 2.编译gst-plugins-base:
