@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>glmosaic: GStreamer Base Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-base Elements">
+<link rel="prev" href="gst-plugins-base-plugins-glmixerbin.html" title="glmixerbin">
+<link rel="next" href="gst-plugins-base-plugins-gloverlay.html" title="gloverlay">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glmosaic.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glmosaic.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glmosaic.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-plugins-glmixerbin.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-plugins-gloverlay.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-plugins-glmosaic"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-plugins-glmosaic.top_of_page"></a>glmosaic</span></h2>
+<p>glmosaic</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<a name="GstGLMosaic"></a><div class="refsect1">
+<a name="gst-plugins-base-plugins-glmosaic.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-plugins-glmosaic.html#GstGLMosaic-struct" title="struct GstGLMosaic">GstGLMosaic</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glmosaic.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstAggregator.html#GstAggregator-struct">GstAggregator</a>
+                    <span class="lineart">╰──</span> <a href="../html/GstVideoAggregator.html#GstVideoAggregator-struct">GstVideoAggregator</a>
+                        <span class="lineart">╰──</span> GstGLBaseMixer
+                            <span class="lineart">╰──</span> GstGLMixer
+                                <span class="lineart">╰──</span> GstGLMosaic
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glmosaic.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstGLMosaic implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstChildProxy.html#GstChildProxy-struct">GstChildProxy</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glmosaic.description"></a><h2>Description</h2>
+<p>glmixer sub element. N gl sink pads to 1 source pad.
+N + 1 OpenGL contexts shared together.
+N &lt;= 6 because the rendering is more a like a cube than a mosaic
+Each opengl input stream is rendered on a cube face</p>
+<div class="refsect3">
+<a name="id-1.2.57.7.3"></a><h4>Examples</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> videotestsrc <span class="gtkdoc opt">!</span> video<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span> format<span class="gtkdoc opt">=</span>YUY2 <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> glmosaic name<span class="gtkdoc opt">=</span>m <span class="gtkdoc opt">!</span> glimagesink \
+    videotestsrc pattern<span class="gtkdoc opt">=</span><span class="number">12</span> <span class="gtkdoc opt">!</span> video<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span> format<span class="gtkdoc opt">=</span>I420<span class="gtkdoc opt">,</span> framerate<span class="gtkdoc opt">=</span><span class="number">5</span><span class="gtkdoc opt">/</span><span class="number">1</span><span class="gtkdoc opt">,</span> width<span class="gtkdoc opt">=</span><span class="number">100</span><span class="gtkdoc opt">,</span> height<span class="gtkdoc opt">=</span><span class="number">200</span> <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> m<span class="gtkdoc opt">.</span> \
+    videotestsrc <span class="gtkdoc opt">!</span> video<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span> framerate<span class="gtkdoc opt">=</span><span class="number">15</span><span class="gtkdoc opt">/</span><span class="number">1</span><span class="gtkdoc opt">,</span> width<span class="gtkdoc opt">=</span><span class="number">1500</span><span class="gtkdoc opt">,</span> height<span class="gtkdoc opt">=</span><span class="number">1500</span> <span class="gtkdoc opt">!</span> gleffects effect<span class="gtkdoc opt">=</span><span class="number">3</span> <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> m<span class="gtkdoc opt">.</span> \
+    videotestsrc <span class="gtkdoc opt">!</span> gleffects effect<span class="gtkdoc opt">=</span><span class="number">2</span> <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> m<span class="gtkdoc opt">.</span>  \
+    videotestsrc <span class="gtkdoc opt">!</span> glfiltercube <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> m<span class="gtkdoc opt">.</span> \
+    videotestsrc <span class="gtkdoc opt">!</span> gleffects effect<span class="gtkdoc opt">=</span><span class="number">6</span> <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> m<span class="gtkdoc opt">.</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+FBO (Frame Buffer Object) is required.</p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.57.7.4.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-base-plugins-plugin-opengl.html#plugin-opengl">opengl</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Julien Isorce &lt;julien.isorce@gmail.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Effect/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.57.7.4.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink_%u</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>request</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw(memory:GLMemory), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw(memory:GLMemory), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glmosaic.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glmosaic.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLMosaic-struct"></a><h3>struct GstGLMosaic</h3>
+<pre class="programlisting">struct GstGLMosaic;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

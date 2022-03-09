@@ -1,0 +1,18 @@
+prefix=
+exec_prefix=
+libdir=@gllibdir@
+includedir=/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs
+girdir=/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs/gst/base
+typelibdir=/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs/gst/base
+gl_platforms=egl 
+gl_winsys=wayland 
+gl_apis=gles2 
+
+Name: GStreamer OpenGL Plugins Libraries, Uninstalled
+Description: Streaming media framework, OpenGL plugins libraries, uninstalled
+Version: 1.16.1
+Requires: gstreamer-video-1.0 gstreamer-base-1.0 gstreamer-1.0
+
+Libs: -L${libdir} -lgstgl-1.0
+Cflags: -I/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs -I/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs   
+

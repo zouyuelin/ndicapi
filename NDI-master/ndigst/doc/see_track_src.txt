@@ -1,0 +1,91 @@
+Factory Details:
+  Rank                     none (0)
+  Long-name                NDI track data source
+  Klass                    Source
+  Description              Sends Track From Device
+  Author                   NDI
+
+Plugin Details:
+  Name                     ndielems
+  Description              NDI plugins
+  Filename                 C:\gstreamer\1.0\x86_64\lib\gstreamer-1.0\ndielems.dll
+  Version                  1.8.1
+  License                  LGPL
+  Source module            gstreamer
+  Source release date      2019-06-14
+  Binary package           GStreamer
+  Origin URL               http://gstreamer.net/
+
+GObject
+ +----GInitiallyUnowned
+       +----GstObject
+             +----GstElement
+                   +----GstBaseSrc
+                         +----GstPushSrc
+                               +----GstTrackSrc
+
+Pad Templates:
+  SINK template: 'klvsink'
+    Availability: Sometimes
+    Capabilities:
+      meta/x-klv
+                 parsed: true
+  
+  SRC template: 'src'
+    Availability: Always
+    Capabilities:
+      trackdata
+
+Element has no clocking capabilities.
+Element has no URI handling capabilities.
+
+Pads:
+  SRC: 'src'
+    Pad Template: 'src'
+  SINK: 'klvsink'
+    Pad Template: 'klvsink'
+
+Element Properties:
+  name                : The name of the object
+                        flags: readable, writable
+                        String. Default: "tracksrc0"
+  parent              : The parent of the object
+                        flags: readable, writable
+                        Object of type "GstObject"
+  blocksize           : Size in bytes to read per buffer (-1 = default)
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 4096 
+  num-buffers         : Number of buffers to output before sending EOS (-1 = unlimited)
+                        flags: readable, writable
+                        Integer. Range: -1 - 2147483647 Default: -1 
+  typefind            : Run typefind before negotiating (deprecated, non-functional)
+                        flags: readable, writable, deprecated
+                        Boolean. Default: false
+  do-timestamp        : Apply current stream time to buffers
+                        flags: readable, writable
+                        Boolean. Default: false
+  connect-to          : Name of NDI device to connect to
+                        flags: readable, writable
+                        String. Default: "P9-00311.local"
+  rtsp-port           : RTSP port for the video connection
+                        flags: readable, writable
+                        String. Default: "554"
+  tool-location       : Directory location of the tool files that will be loaded
+                        flags: readable, writable
+                        String. Default: "C:/Tool Definition Files/"
+  tool-file           : Name of a tool rom file to load
+                        flags: readable, writable
+                        String. Default: "8700339.rom"
+  tool-tracker        : Tool Tracker Communicates with the NDI Device
+                        flags: readable, writable
+                        Object of type "GObject"
+
+Element Signals:
+  "pad-added" :  void user_function (GstElement* object,
+                                     GstPad* arg0,
+                                     gpointer user_data);
+  "pad-removed" :  void user_function (GstElement* object,
+                                       GstPad* arg0,
+                                       gpointer user_data);
+  "no-more-pads" :  void user_function (GstElement* object,
+                                        gpointer user_data);

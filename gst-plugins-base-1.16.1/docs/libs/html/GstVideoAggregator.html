@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstVideoAggregator: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-video.html" title="Video Library">
+<link rel="prev" href="gst-plugins-base-libs-GstVideoAffineTransformationMeta.html" title="GstVideoAffineTransformationMeta">
+<link rel="next" href="GstVideoAggregatorPad.html" title="GstVideoAggregatorPad">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstVideoAggregator.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstVideoAggregator.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-video.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-GstVideoAffineTransformationMeta.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GstVideoAggregatorPad.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstVideoAggregator"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstVideoAggregator.top_of_page"></a>GstVideoAggregator</span></h2>
+<p>GstVideoAggregator — Base class for video aggregators</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstVideoAggregator.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstVideoAggregator.html#GstVideoAggregator-struct" title="struct GstVideoAggregator">GstVideoAggregator</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstVideoAggregator.html#GstVideoAggregatorClass" title="struct GstVideoAggregatorClass">GstVideoAggregatorClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregator.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstAggregator.html#GstAggregator-struct">GstAggregator</a>
+                    <span class="lineart">╰──</span> GstVideoAggregator
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregator.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/video/video.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregator.description"></a><h2>Description</h2>
+<p>VideoAggregator can accept AYUV, ARGB and BGRA video streams. For each of the requested
+sink pads it will compare the incoming geometry and framerate to define the
+output parameters. Indeed output video frames will have the geometry of the
+biggest incoming video stream and the framerate of the fastest incoming one.</p>
+<p>VideoAggregator will do colorspace conversion.</p>
+<p>Zorder for each input stream can be configured on the
+<a class="link" href="GstVideoAggregatorPad.html" title="GstVideoAggregatorPad"><span class="type">GstVideoAggregatorPad</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregator.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregator.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstVideoAggregator-struct"></a><h3>struct GstVideoAggregator</h3>
+<pre class="programlisting">struct GstVideoAggregator {
+  /* Output caps */
+  GstVideoInfo               info;
+};
+</pre>
+<div class="refsect3">
+<a name="GstVideoAggregator.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoInfo" title="struct GstVideoInfo"><span class="type">GstVideoInfo</span></a> <em class="structfield"><code><a name="GstVideoAggregator-struct.info"></a>info</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoInfo" title="struct GstVideoInfo"><span class="type">GstVideoInfo</span></a> representing the currently set
+srcpad caps.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVideoAggregatorClass"></a><h3>struct GstVideoAggregatorClass</h3>
+<pre class="programlisting">struct GstVideoAggregatorClass {
+  GstCaps *          (*update_caps)               (GstVideoAggregator *  videoaggregator,
+                                                   GstCaps            *  caps);
+  GstFlowReturn      (*aggregate_frames)          (GstVideoAggregator *  videoaggregator,
+                                                   GstBuffer          *  outbuffer);
+  GstFlowReturn      (*create_output_buffer)      (GstVideoAggregator *  videoaggregator,
+                                                   GstBuffer          ** outbuffer);
+  void               (*find_best_format)          (GstVideoAggregator *  vagg,
+                                                   GstCaps            *  downstream_caps,
+                                                   GstVideoInfo       *  best_info,
+                                                   gboolean           *  at_least_one_alpha);
+};
+</pre>
+<div class="refsect3">
+<a name="GstVideoAggregatorClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstVideoAggregatorClass.update-caps"></a>update_caps</code></em> ()</p></td>
+<td class="struct_member_description"><p>Optional.
+Lets subclasses update the <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> representing
+the src pad caps before usage.  Return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to indicate failure.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstVideoAggregatorClass.aggregate-frames"></a>aggregate_frames</code></em> ()</p></td>
+<td class="struct_member_description"><p>Lets subclasses aggregate frames that are ready. Subclasses
+should iterate the GstElement.sinkpads and use the already
+mapped <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoFrame" title="struct GstVideoFrame"><span class="type">GstVideoFrame</span></a> from <code class="function">gst_video_aggregator_pad_get_prepared_frame()</code>
+or directly use the <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> from <code class="function">gst_video_aggregator_pad_get_current_buffer()</code>
+if it needs to map the buffer in a special way. The result of the
+aggregation should land in <em class="parameter"><code>outbuffer</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstVideoAggregatorClass.create-output-buffer"></a>create_output_buffer</code></em> ()</p></td>
+<td class="struct_member_description"><p>Optional.
+Lets subclasses provide a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> to be used as <em class="parameter"><code>outbuffer</code></em>
+of
+the <span class="type">aggregate_frames</span> vmethod.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstVideoAggregatorClass.find-best-format"></a>find_best_format</code></em> ()</p></td>
+<td class="struct_member_description"><p>Optional.
+Lets subclasses decide of the best common format to use.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

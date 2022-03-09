@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>opengl: GStreamer Base Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch02.html" title="gst-plugins-base Plugins">
+<link rel="prev" href="gst-plugins-base-plugins-plugin-opus.html" title="opus">
+<link rel="next" href="gst-plugins-base-plugins-plugin-overlaycomposition.html" title="overlaycomposition">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-plugins-plugin-opus.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-plugins-plugin-overlaycomposition.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-plugins-plugin-opengl"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">opengl</span></h2>
+<p>opengl — <a name="plugin-opengl"></a>OpenGL plugin</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.3.18.3"></a><h2>Plugin Information</h2>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">filename</span></p></td>
+<td>libgstopengl.so</td>
+</tr>
+<tr>
+<td><p><span class="term">version</span></p></td>
+<td>1.16.1</td>
+</tr>
+<tr>
+<td><p><span class="term">run-time license</span></p></td>
+<td>LGPL</td>
+</tr>
+<tr>
+<td><p><span class="term">package</span></p></td>
+<td>GStreamer Base Plug-ins source release</td>
+</tr>
+<tr>
+<td><p><span class="term">origin</span></p></td>
+<td>Unknown package origin</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.18.4"></a><h2>Elements</h2>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">glalpha</span></p></td>
+<td>Adds an alpha channel to video using OpenGL - uniform or chroma-keying</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glcolorbalance.html" title="glcolorbalance">glcolorbalance</a></span></p></td>
+<td>Adjusts brightness, contrast, hue, saturation on a video stream</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glcolorconvert.html" title="glcolorconvert">glcolorconvert</a></span></p></td>
+<td>Converts between color spaces using OpenGL shaders</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glcolorscale.html" title="glcolorscale">glcolorscale</a></span></p></td>
+<td>Colorspace converter and video scaler</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-gldeinterlace.html" title="gldeinterlace">gldeinterlace</a></span></p></td>
+<td>Deinterlacing based on fragment shaders</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-gldifferencematte.html" title="gldifferencematte">gldifferencematte</a></span></p></td>
+<td>Saves a background frame and replace it with a pixbuf</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-gldownload.html" title="gldownload">gldownload</a></span></p></td>
+<td>Downloads data from OpenGL</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-gleffects.html" title="gleffects">gleffects</a></span></p></td>
+<td>GL Shading Language effects</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_blur</span></p></td>
+<td>GL Shading Language effects - Blur with 9x9 separable convolution Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_bulge</span></p></td>
+<td>GL Shading Language effects - Bulge Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_fisheye</span></p></td>
+<td>GL Shading Language effects - FishEye Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_glow</span></p></td>
+<td>GL Shading Language effects - Glow Lighting Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_heat</span></p></td>
+<td>GL Shading Language effects - Heat Signature Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_identity</span></p></td>
+<td>GL Shading Language effects - Do nothing Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_laplacian</span></p></td>
+<td>GL Shading Language effects - Laplacian Convolution Demo Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_lumaxpro</span></p></td>
+<td>GL Shading Language effects - Luma Cross Processing Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_mirror</span></p></td>
+<td>GL Shading Language effects - Mirror Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_sepia</span></p></td>
+<td>GL Shading Language effects - Sepia Toning Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_sin</span></p></td>
+<td>GL Shading Language effects - All Grey but Red Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_sobel</span></p></td>
+<td>GL Shading Language effects - Sobel edge detection Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_square</span></p></td>
+<td>GL Shading Language effects - Square Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_squeeze</span></p></td>
+<td>GL Shading Language effects - Squeeze Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_stretch</span></p></td>
+<td>GL Shading Language effects - Stretch Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_tunnel</span></p></td>
+<td>GL Shading Language effects - Light Tunnel Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_twirl</span></p></td>
+<td>GL Shading Language effects - Twirl Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_xpro</span></p></td>
+<td>GL Shading Language effects - Cross Processing Effect</td>
+</tr>
+<tr>
+<td><p><span class="term">gleffects_xray</span></p></td>
+<td>GL Shading Language effects - Glowing negative effect</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glfilterapp.html" title="glfilterapp">glfilterapp</a></span></p></td>
+<td>Use client callbacks to define the scene</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glfilterbin.html" title="glfilterbin">glfilterbin</a></span></p></td>
+<td>Infrastructure to process GL textures</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glfiltercube.html" title="glfiltercube">glfiltercube</a></span></p></td>
+<td>Map input texture on the 6 cube faces</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glfilterglass.html" title="glfilterglass">glfilterglass</a></span></p></td>
+<td>Glass Filter</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glimagesink.html" title="glimagesink">glimagesink</a></span></p></td>
+<td>Infrastructure to process GL textures</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html" title="glimagesinkelement">glimagesinkelement</a></span></p></td>
+<td>A videosink based on OpenGL</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glmixerbin.html" title="glmixerbin">glmixerbin</a></span></p></td>
+<td>OpenGL video_mixer empty bin</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glmosaic.html" title="glmosaic">glmosaic</a></span></p></td>
+<td>OpenGL mosaic</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-gloverlay.html" title="gloverlay">gloverlay</a></span></p></td>
+<td>Overlay GL video texture with a JPEG/PNG image</td>
+</tr>
+<tr>
+<td><p><span class="term">gloverlaycompositor</span></p></td>
+<td>Flatten a stream containing GstVideoOverlayCompositionMeta</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glshader.html" title="glshader">glshader</a></span></p></td>
+<td>Perform operations with a GLSL shader</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glsinkbin.html" title="glsinkbin">glsinkbin</a></span></p></td>
+<td>Infrastructure to process GL textures</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glsrcbin.html" title="glsrcbin">glsrcbin</a></span></p></td>
+<td>Infrastructure to process GL textures</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glstereomix.html" title="glstereomix">glstereomix</a></span></p></td>
+<td>OpenGL stereo video combiner</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glstereosplit.html" title="glstereosplit">glstereosplit</a></span></p></td>
+<td>Splits a stereoscopic stream into separate left/right streams</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-gltestsrc.html" title="gltestsrc">gltestsrc</a></span></p></td>
+<td>Creates a test video stream</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glupload.html" title="glupload">glupload</a></span></p></td>
+<td>Uploads data into OpenGL</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glvideomixer.html" title="glvideomixer">glvideomixer</a></span></p></td>
+<td>OpenGL video_mixer bin</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glvideomixerelement.html" title="glvideomixerelement">glvideomixerelement</a></span></p></td>
+<td>OpenGL video_mixer</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-base-plugins-glviewconvert.html" title="glviewconvert">glviewconvert</a></span></p></td>
+<td>Convert stereoscopic/multiview video formats</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

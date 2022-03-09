@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstAudioAggregator: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-audio.html" title="Audio Library">
+<link rel="prev" href="gst-plugins-base-libs-GstAudio-meta.html" title="GstAudio meta">
+<link rel="next" href="GstAudioCdSrc.html" title="GstAudioCdSrc">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstAudioAggregator.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstAudioAggregator.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GstAudioAggregator.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-audio.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-GstAudio-meta.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GstAudioCdSrc.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstAudioAggregator"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstAudioAggregator.top_of_page"></a>GstAudioAggregator</span></h2>
+<p>GstAudioAggregator — Base class that manages a set of audio input pads
+with the purpose of aggregating or mixing their raw audio input buffers</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstAudioAggregator.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstAudioAggregator.html#gst-audio-aggregator-set-sink-caps" title="gst_audio_aggregator_set_sink_caps ()">gst_audio_aggregator_set_sink_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
+<td class="property_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregator--alignment-threshold" title="The “alignment-threshold” property">alignment-threshold</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
+<td class="property_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregator--discont-wait" title="The “discont-wait” property">discont-wait</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
+<td class="property_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregator--output-buffer-duration" title="The “output-buffer-duration” property">output-buffer-duration</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</td>
+<td class="property_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregatorConvertPad--converter-config" title="The “converter-config” property">converter-config</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstAudioAggregatorPad"></a><a name="GstAudioAggregatorConvertPad"></a><div class="refsect1">
+<a name="GstAudioAggregator.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregator-struct" title="struct GstAudioAggregator">GstAudioAggregator</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregatorClass" title="struct GstAudioAggregatorClass">GstAudioAggregatorClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregatorPad-struct" title="struct GstAudioAggregatorPad">GstAudioAggregatorPad</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregatorPadClass" title="struct GstAudioAggregatorPadClass">GstAudioAggregatorPadClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregatorConvertPad-struct" title="struct GstAudioAggregatorConvertPad">GstAudioAggregatorConvertPad</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstAudioAggregator.html#GstAudioAggregatorConvertPadClass" title="struct GstAudioAggregatorConvertPadClass">GstAudioAggregatorConvertPadClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+            <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstAggregator.html#GstAggregator-struct">GstAggregator</a>
+            <span class="lineart">│</span>       <span class="lineart">╰──</span> GstAudioAggregator
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPad-struct">GstPad</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstAggregatorPad.html#GstAggregatorPad-struct">GstAggregatorPad</a>
+                    <span class="lineart">╰──</span> GstAudioAggregatorPad
+                        <span class="lineart">╰──</span> GstAudioAggregatorConvertPad
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/audio/audio.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.description"></a><h2>Description</h2>
+<p>Subclasses must use (a subclass of) <a class="link" href="GstAudioAggregator.html#GstAudioAggregatorPad"><span class="type">GstAudioAggregatorPad</span></a> for both
+their source and sink pads,
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#gst-element-class-add-static-pad-template-with-gtype"><code class="function">gst_element_class_add_static_pad_template_with_gtype()</code></a> is a convenient
+helper.</p>
+<p><a class="link" href="GstAudioAggregator.html" title="GstAudioAggregator"><span class="type">GstAudioAggregator</span></a> can perform conversion on the data arriving
+on its sink pads, based on the format expected downstream: in order
+to enable that behaviour, the GType of the sink pads must either be
+a (subclass of) <a class="link" href="GstAudioAggregator.html#GstAudioAggregatorConvertPad"><span class="type">GstAudioAggregatorConvertPad</span></a> to use the default
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> implementation, or a subclass of <a class="link" href="GstAudioAggregator.html#GstAudioAggregatorPad"><span class="type">GstAudioAggregatorPad</span></a>
+implementing <a class="link" href="GstAudioAggregator.html#GstAudioAggregatorPadClass.convert-buffer"><span class="type">GstAudioAggregatorPadClass.convert_buffer</span></a>.</p>
+<p>To allow for the output caps to change, the mechanism is the same as
+above, with the GType of the source pad.</p>
+<p>See <a href="/usr/share/gtk-doc/html/gst-plugins-base-plugins-1.0/gst-plugins-base-plugins-audiomixer.html#GstAudioMixer-struct"><span class="type">GstAudioMixer</span></a> for an example.</p>
+<p>When conversion is enabled, <a class="link" href="GstAudioAggregator.html" title="GstAudioAggregator"><span class="type">GstAudioAggregator</span></a> will accept
+any type of raw audio caps and perform conversion
+on the data arriving on its sink pads, with whatever downstream
+expects as the target format.</p>
+<p>In case downstream caps are not fully fixated, it will use
+the first configured sink pad to finish fixating its source pad
+caps.</p>
+<p>A notable exception for now is the sample rate, sink pads must
+have the same sample rate as either the downstream requirement,
+or the first configured pad, or a combination of both (when
+downstream specifies a range or a set of acceptable rates).</p>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-audio-aggregator-set-sink-caps"></a><h3>gst_audio_aggregator_set_sink_caps ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_audio_aggregator_set_sink_caps (<em class="parameter"><code><a class="link" href="GstAudioAggregator.html" title="GstAudioAggregator"><span class="type">GstAudioAggregator</span></a> *aagg</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GstAudioAggregator.html#GstAudioAggregatorPad"><span class="type">GstAudioAggregatorPad</span></a> *pad</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *caps</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstAudioAggregator-struct"></a><h3>struct GstAudioAggregator</h3>
+<pre class="programlisting">struct GstAudioAggregator {
+  GstCaps                   *current_caps;
+};
+</pre>
+<p>GstAudioAggregator object</p>
+<div class="refsect3">
+<a name="GstAudioAggregator.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *<em class="structfield"><code><a name="GstAudioAggregator-struct.current-caps"></a>current_caps</code></em>;</p></td>
+<td class="struct_member_description"><p>The caps set by the subclass</p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregatorClass"></a><h3>struct GstAudioAggregatorClass</h3>
+<pre class="programlisting">struct GstAudioAggregatorClass {
+  GstAggregatorClass   parent_class;
+
+  GstBuffer * (* create_output_buffer) (GstAudioAggregator * aagg,
+      guint num_frames);
+  gboolean (* aggregate_one_buffer) (GstAudioAggregator * aagg,
+      GstAudioAggregatorPad * pad, GstBuffer * inbuf, guint in_offset,
+      GstBuffer * outbuf, guint out_offset, guint num_frames);
+};
+</pre>
+<div class="refsect3">
+<a name="GstAudioAggregatorClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstAudioAggregatorClass.create-output-buffer"></a>create_output_buffer</code></em> ()</p></td>
+<td class="struct_member_description"><p>Create a new output buffer contains num_frames frames.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstAudioAggregatorClass.aggregate-one-buffer"></a>aggregate_one_buffer</code></em> ()</p></td>
+<td class="struct_member_description"><p>Aggregates one input buffer to the output
+buffer.  The in_offset and out_offset are in "frames", which is
+the size of a sample times the number of channels. Returns TRUE if
+any non-silence was added to the buffer</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregatorPad-struct"></a><h3>struct GstAudioAggregatorPad</h3>
+<pre class="programlisting">struct GstAudioAggregatorPad {
+  /* read-only, with OBJECT_LOCK */
+  GstAudioInfo                      info;
+};
+</pre>
+<p>The default implementation of GstPad used with <a class="link" href="GstAudioAggregator.html" title="GstAudioAggregator"><span class="type">GstAudioAggregator</span></a></p>
+<div class="refsect3">
+<a name="GstAudioAggregatorPad.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioInfo"><span class="type">GstAudioInfo</span></a> <em class="structfield"><code><a name="GstAudioAggregatorPad-struct.info"></a>info</code></em>;</p></td>
+<td class="struct_member_description"><p>The audio info for this pad set from the incoming caps</p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregatorPadClass"></a><h3>struct GstAudioAggregatorPadClass</h3>
+<pre class="programlisting">struct GstAudioAggregatorPadClass {
+  GstAggregatorPadClass   parent_class;
+
+  GstBuffer * (* convert_buffer) (GstAudioAggregatorPad * pad,
+                                  GstAudioInfo *in_info,
+                                  GstAudioInfo *out_info,
+                                  GstBuffer * buffer);
+
+  void        (* update_conversion_info) (GstAudioAggregatorPad *pad);
+};
+</pre>
+<div class="refsect3">
+<a name="GstAudioAggregatorPadClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstAudioAggregatorPadClass.convert-buffer"></a>convert_buffer</code></em> ()</p></td>
+<td class="struct_member_description"><p>Convert a buffer from one format to another.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstAudioAggregatorPadClass.update-conversion-info"></a>update_conversion_info</code></em> ()</p></td>
+<td class="struct_member_description"><p>Called when either the input or output
+formats have changed.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregatorConvertPad-struct"></a><h3>struct GstAudioAggregatorConvertPad</h3>
+<pre class="programlisting">struct GstAudioAggregatorConvertPad;</pre>
+<p>An implementation of GstPad that can be used with <a class="link" href="GstAudioAggregator.html" title="GstAudioAggregator"><span class="type">GstAudioAggregator</span></a>.</p>
+<p>See <a class="link" href="GstAudioAggregator.html" title="GstAudioAggregator"><span class="type">GstAudioAggregator</span></a> for more details.</p>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregatorConvertPadClass"></a><h3>struct GstAudioAggregatorConvertPadClass</h3>
+<pre class="programlisting">struct GstAudioAggregatorConvertPadClass {
+  GstAudioAggregatorPadClass   parent_class;
+};
+</pre>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-1.14">1.14</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstAudioAggregator--alignment-threshold"></a><h3>The <code class="literal">“alignment-threshold”</code> property</h3>
+<pre class="programlisting">  “alignment-threshold”      <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
+<p>Timestamp alignment threshold in nanoseconds.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 18446744073709551614</p>
+<p>Default value: 40000000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregator--discont-wait"></a><h3>The <code class="literal">“discont-wait”</code> property</h3>
+<pre class="programlisting">  “discont-wait”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
+<p>Window of time in nanoseconds to wait before creating a discontinuity.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 18446744073709551614</p>
+<p>Default value: 1000000000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregator--output-buffer-duration"></a><h3>The <code class="literal">“output-buffer-duration”</code> property</h3>
+<pre class="programlisting">  “output-buffer-duration”   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
+<p>Output block size in nanoseconds.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 1</p>
+<p>Default value: 10000000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioAggregatorConvertPad--converter-config"></a><h3>The <code class="literal">“converter-config”</code> property</h3>
+<pre class="programlisting">  “converter-config”         <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</pre>
+<p>A GstStructure describing the configuration that should be used when converting this pad's audio buffers.</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstAudioAggregator.see-also"></a><h2>See Also</h2>
+<p><a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstAggregator.html#GstAggregator-struct"><span class="type">GstAggregator</span></a>, <a href="/usr/share/gtk-doc/html/gst-plugins-base-plugins-1.0/gst-plugins-base-plugins-audiomixer.html#GstAudioMixer-struct"><span class="type">GstAudioMixer</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

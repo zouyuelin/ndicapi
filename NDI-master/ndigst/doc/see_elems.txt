@@ -1,0 +1,18 @@
+Plugin Details:
+  Name                     ndielems
+  Description              NDI plugins
+  Filename                 C:\gstreamer\1.0\x86_64\lib\gstreamer-1.0\ndielems.dll
+  Version                  1.8.1
+  License                  LGPL
+  Source module            gstreamer
+  Source release date      2019-06-14
+  Binary package           GStreamer
+  Origin URL               http://gstreamer.net/
+
+  tracksrc: NDI track data source
+  trackoverlay: Tracking data overlay drawing
+  trackbin: NDI track data source
+
+  3 features:
+  +-- 3 elements
+

@@ -1,0 +1,77 @@
+Factory Details:
+  Rank                     none (0)
+  Long-name                Tracking data overlay drawing
+  Klass                    Filter/Converter
+  Description              Draws tracking points to screen space
+  Author                   NDI
+
+Plugin Details:
+  Name                     ndielems
+  Description              NDI plugins
+  Filename                 C:\gstreamer\1.0\x86_64\lib\gstreamer-1.0\ndielems.dll
+  Version                  1.8.1
+  License                  LGPL
+  Source module            gstreamer
+  Source release date      2019-06-14
+  Binary package           GStreamer
+  Origin URL               http://gstreamer.net/
+
+GObject
+ +----GInitiallyUnowned
+       +----GstObject
+             +----GstElement
+                   +----GstBaseTransform
+                         +----GstVideoFilter
+                               +----GstTrackOverlay
+
+Pad Templates:
+  SINK template: 'sink'
+    Availability: Always
+    Capabilities:
+      video/x-raw
+                 format: { (string)RGBx, (string)RGB, (string)BGR, (string)BGRx, (string)xRGB, (string)xBGR, (string)RGBA, (string)BGRA, (string)ARGB, (string)ABGR, (string)I420, (string)YV12, (string)AYUV, (string)YUY2, (string)UYVY, (string)v308, (string)v210, (string)v216, (string)Y41B, (string)Y42B, (string)Y444, (string)YVYU, (string)NV12, (string)NV21, (string)UYVP, (string)RGB16, (string)BGR16, (string)RGB15, (string)BGR15, (string)UYVP, (string)A420, (string)YUV9, (string)YVU9, (string)IYU1, (string)ARGB64, (string)AYUV64, (string)r210, (string)I420_10LE, (string)I420_10BE, (string)GRAY8, (string)GRAY16_BE, (string)GRAY16_LE }
+                  width: [ 1, 2147483647 ]
+                 height: [ 1, 2147483647 ]
+              framerate: [ 0/1, 2147483647/1 ]
+  
+  SINK template: 'tracksink'
+    Availability: Always
+    Capabilities:
+      trackdata
+  
+  SRC template: 'src'
+    Availability: Always
+    Capabilities:
+      video/x-raw
+                 format: { (string)RGBx, (string)RGB, (string)BGR, (string)BGRx, (string)xRGB, (string)xBGR, (string)RGBA, (string)BGRA, (string)ARGB, (string)ABGR, (string)I420, (string)YV12, (string)AYUV, (string)YUY2, (string)UYVY, (string)v308, (string)v210, (string)v216, (string)Y41B, (string)Y42B, (string)Y444, (string)YVYU, (string)NV12, (string)NV21, (string)UYVP, (string)RGB16, (string)BGR16, (string)RGB15, (string)BGR15, (string)UYVP, (string)A420, (string)YUV9, (string)YVU9, (string)IYU1, (string)ARGB64, (string)AYUV64, (string)r210, (string)I420_10LE, (string)I420_10BE, (string)GRAY8, (string)GRAY16_BE, (string)GRAY16_LE }
+                  width: [ 1, 2147483647 ]
+                 height: [ 1, 2147483647 ]
+              framerate: [ 0/1, 2147483647/1 ]
+
+Element has no clocking capabilities.
+Element has no URI handling capabilities.
+
+Pads:
+  SINK: 'sink'
+    Pad Template: 'sink'
+  SRC: 'src'
+    Pad Template: 'src'
+  SINK: 'tracksink'
+    Pad Template: 'tracksink'
+
+Element Properties:
+  name                : The name of the object
+                        flags: readable, writable
+                        String. Default: "trackoverlay0"
+  parent              : The parent of the object
+                        flags: readable, writable
+                        Object of type "GstObject"
+  qos                 : Handle Quality-of-Service events
+                        flags: readable, writable
+                        Boolean. Default: true
+  transform-params    : Lens Parameters
+                        flags: readable, writable
+                        Object of type "GObject"
+  track-freq          : Tool Update Frequency (HZ)
+                        flags: readable, writable
+                        Integer. Range: 0 - 2147483647 Default: 30 

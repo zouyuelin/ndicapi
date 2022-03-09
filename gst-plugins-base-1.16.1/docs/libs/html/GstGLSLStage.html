@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstGLSLStage: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gl.html" title="OpenGL Integration Library">
+<link rel="prev" href="gst-plugins-base-libs-GstGLSL.html" title="GstGLSL">
+<link rel="next" href="gst-plugins-base-libs-GstGLSyncMeta.html" title="GstGLSyncMeta">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstGLSLStage.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstGLSLStage.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gl.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-GstGLSL.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-libs-GstGLSyncMeta.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstGLSLStage"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstGLSLStage.top_of_page"></a>GstGLSLStage</span></h2>
+<p>GstGLSLStage — object for dealing with OpenGL shader stages</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstGLSLStage.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-new" title="gst_glsl_stage_new ()">gst_glsl_stage_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-new-default-fragment" title="gst_glsl_stage_new_default_fragment ()">gst_glsl_stage_new_default_fragment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-new-default-vertex" title="gst_glsl_stage_new_default_vertex ()">gst_glsl_stage_new_default_vertex</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-new-with-string" title="gst_glsl_stage_new_with_string ()">gst_glsl_stage_new_with_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-new-with-strings" title="gst_glsl_stage_new_with_strings ()">gst_glsl_stage_new_with_strings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-set-strings" title="gst_glsl_stage_set_strings ()">gst_glsl_stage_set_strings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-compile" title="gst_glsl_stage_compile ()">gst_glsl_stage_compile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-get-handle" title="gst_glsl_stage_get_handle ()">gst_glsl_stage_get_handle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="returnvalue">GstGLSLProfile</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-get-profile" title="gst_glsl_stage_get_profile ()">gst_glsl_stage_get_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-get-shader-type" title="gst_glsl_stage_get_shader_type ()">gst_glsl_stage_get_shader_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="returnvalue">GstGLSLVersion</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLSLStage.html#gst-glsl-stage-get-version" title="gst_glsl_stage_get_version ()">gst_glsl_stage_get_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLSLStage.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstGLSLStage.html#GstGLSLStage-struct" title="GstGLSLStage">GstGLSLStage</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstGLSLStage.html#GstGLSLStageClass" title="GstGLSLStageClass">GstGLSLStageClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLSLStage.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> GstGLSLStage
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLSLStage.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/gl/gl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLSLStage.description"></a><h2>Description</h2>
+<p><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> holds and represents a single OpenGL shader stage.</p>
+</div>
+<div class="refsect1">
+<a name="GstGLSLStage.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-glsl-stage-new"></a><h3>gst_glsl_stage_new ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+gst_glsl_stage_new (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> type</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the GL enum shader stage type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-new.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> of the specified <em class="parameter"><code>type</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-new-default-fragment"></a><h3>gst_glsl_stage_new_default_fragment ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+gst_glsl_stage_new_default_fragment (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-new-default-vertex"></a><h3>gst_glsl_stage_new_default_vertex ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+gst_glsl_stage_new_default_vertex (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-new-with-string"></a><h3>gst_glsl_stage_new_with_string ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+gst_glsl_stage_new_with_string (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> type</code></em>,
+                                <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a> version</code></em>,
+                                <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a> profile</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-new-with-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the GL enum shader stage type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>a shader string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-new-with-string.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> of the specified <em class="parameter"><code>type</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-new-with-strings"></a><h3>gst_glsl_stage_new_with_strings ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="returnvalue">GstGLSLStage</span></a> *
+gst_glsl_stage_new_with_strings (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> type</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a> version</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a> profile</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_strings</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **str</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-new-with-strings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the GL enum shader stage type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_strings</p></td>
+<td class="parameter_description"><p>the number of strings in <em class="parameter"><code>str</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>an array of strings concatted together to produce a shader. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_strings]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-new-with-strings.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> of the specified <em class="parameter"><code>type</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-set-strings"></a><h3>gst_glsl_stage_set_strings ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_glsl_stage_set_strings (<em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>,
+                            <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a> version</code></em>,
+                            <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a> profile</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_strings</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **str</code></em>);</pre>
+<p>Replaces the current shader string with <em class="parameter"><code>str</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-glsl-stage-set-strings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_strings</p></td>
+<td class="parameter_description"><p>number of strings in <em class="parameter"><code>str</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>a GLSL shader string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_strings][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-compile"></a><h3>gst_glsl_stage_compile ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_glsl_stage_compile (<em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-compile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> to use on failure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-compile.returns"></a><h4>Returns</h4>
+<p> whether the compilation suceeded</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-get-handle"></a><h3>gst_glsl_stage_get_handle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_glsl_stage_get_handle (<em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-handle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-handle.returns"></a><h4>Returns</h4>
+<p> The GL handle for this shader stage</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-get-profile"></a><h3>gst_glsl_stage_get_profile ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="returnvalue">GstGLSLProfile</span></a>
+gst_glsl_stage_get_profile (<em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-profile.returns"></a><h4>Returns</h4>
+<p> The GLSL profile for the current shader stage</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-get-shader-type"></a><h3>gst_glsl_stage_get_shader_type ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_glsl_stage_get_shader_type (<em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-shader-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-shader-type.returns"></a><h4>Returns</h4>
+<p> The GL shader type for this shader stage</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-glsl-stage-get-version"></a><h3>gst_glsl_stage_get_version ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="returnvalue">GstGLSLVersion</span></a>
+gst_glsl_stage_get_version (<em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-version.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-glsl-stage-get-version.returns"></a><h4>Returns</h4>
+<p> The GLSL version for the current shader stage</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLSLStage.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLSLStage-struct"></a><h3>GstGLSLStage</h3>
+<pre class="programlisting">typedef struct _GstGLSLStage GstGLSLStage;</pre>
+<p>Opaque <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> struct</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLSLStageClass"></a><h3>GstGLSLStageClass</h3>
+<pre class="programlisting">typedef struct {
+} GstGLSLStageClass;
+</pre>
+<p>Opaque <a class="link" href="GstGLSLStage.html#GstGLSLStageClass" title="GstGLSLStageClass"><span class="type">GstGLSLStageClass</span></a> struct</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLSLStage.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

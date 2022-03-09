@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstGLSyncMeta: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gl.html" title="OpenGL Integration Library">
+<link rel="prev" href="GstGLSLStage.html" title="GstGLSLStage">
+<link rel="next" href="GstGLUpload.html" title="GstGLUpload">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-libs-GstGLSyncMeta.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gl.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstGLSLStage.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GstGLUpload.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-libs-GstGLSyncMeta"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-libs-GstGLSyncMeta.top_of_page"></a>GstGLSyncMeta</span></h2>
+<p>GstGLSyncMeta — synchronization primitives</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstGLSyncMeta.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstMeta.html#GstMetaInfo"><span class="returnvalue">GstMetaInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#gst-gl-sync-meta-get-info" title="gst_gl_sync_meta_get_info ()">gst_gl_sync_meta_get_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="returnvalue">GstGLSyncMeta</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#gst-buffer-add-gl-sync-meta" title="gst_buffer_add_gl_sync_meta ()">gst_buffer_add_gl_sync_meta</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="returnvalue">GstGLSyncMeta</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#gst-buffer-add-gl-sync-meta-full" title="gst_buffer_add_gl_sync_meta_full ()">gst_buffer_add_gl_sync_meta_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#gst-buffer-get-gl-sync-meta" title="gst_buffer_get_gl_sync_meta()">gst_buffer_get_gl_sync_meta</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#gst-gl-sync-meta-set-sync-point" title="gst_gl_sync_meta_set_sync_point ()">gst_gl_sync_meta_set_sync_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#gst-gl-sync-meta-wait" title="gst_gl_sync_meta_wait ()">gst_gl_sync_meta_wait</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#gst-gl-sync-meta-wait-cpu" title="gst_gl_sync_meta_wait_cpu ()">gst_gl_sync_meta_wait_cpu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstGLSyncMeta.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta">GstGLSyncMeta</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GST-BUFFER-POOL-OPTION-GL-SYNC-META:CAPS" title="GST_BUFFER_POOL_OPTION_GL_SYNC_META">GST_BUFFER_POOL_OPTION_GL_SYNC_META</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstGLSyncMeta.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/gl/gl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstGLSyncMeta.description"></a><h2>Description</h2>
+<p><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a> provides the ability to synchronize the OpenGL command stream
+with the CPU or with other OpenGL contexts.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstGLSyncMeta.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-gl-sync-meta-get-info"></a><h3>gst_gl_sync_meta_get_info ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstMeta.html#GstMetaInfo"><span class="returnvalue">GstMetaInfo</span></a> *
+gst_gl_sync_meta_get_info (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-buffer-add-gl-sync-meta"></a><h3>gst_buffer_add_gl_sync_meta ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="returnvalue">GstGLSyncMeta</span></a> *
+gst_buffer_add_gl_sync_meta (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *buffer</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-buffer-add-gl-sync-meta.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-buffer-add-gl-sync-meta.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a> added to <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-buffer-add-gl-sync-meta-full"></a><h3>gst_buffer_add_gl_sync_meta_full ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="returnvalue">GstGLSyncMeta</span></a> *
+gst_buffer_add_gl_sync_meta_full (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *buffer</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-buffer-add-gl-sync-meta-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>sync data to hold</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-buffer-add-gl-sync-meta-full.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a> added to <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-buffer-get-gl-sync-meta"></a><h3>gst_buffer_get_gl_sync_meta()</h3>
+<pre class="programlisting">#define gst_buffer_get_gl_sync_meta(b) ((GstGLSyncMeta*)gst_buffer_get_meta((b),GST_GL_SYNC_META_API_TYPE))
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-sync-meta-set-sync-point"></a><h3>gst_gl_sync_meta_set_sync_point ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_sync_meta_set_sync_point (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a> *sync_meta</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+<p>Set a sync point to possibly wait on at a later time.</p>
+<div class="refsect3">
+<a name="gst-gl-sync-meta-set-sync-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sync_meta</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-sync-meta-wait"></a><h3>gst_gl_sync_meta_wait ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_sync_meta_wait (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a> *sync_meta</code></em>,
+                       <em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+<p>Insert a wait into <em class="parameter"><code>context</code></em>
+'s command stream ensuring all previous OpenGL
+commands before <em class="parameter"><code>sync_meta</code></em>
+ have completed.</p>
+<div class="refsect3">
+<a name="gst-gl-sync-meta-wait.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sync_meta</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-sync-meta-wait-cpu"></a><h3>gst_gl_sync_meta_wait_cpu ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_sync_meta_wait_cpu (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a> *sync_meta</code></em>,
+                           <em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+<p>Perform a wait so that the sync point has passed from the CPU's perspective
+What that means, is that all GL operations changing CPU-visible data before
+the sync point are now visible.</p>
+<div class="refsect3">
+<a name="gst-gl-sync-meta-wait-cpu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sync_meta</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstGLSyncMeta.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLSyncMeta"></a><h3>struct GstGLSyncMeta</h3>
+<pre class="programlisting">struct GstGLSyncMeta {
+  GstMeta parent;
+
+  GstGLContext *context;
+
+  gpointer      data;
+
+  void (*set_sync) (GstGLSyncMeta * sync, GstGLContext * context);
+  void (*set_sync_gl) (GstGLSyncMeta * sync, GstGLContext * context);
+  void (*wait) (GstGLSyncMeta * sync, GstGLContext * context);
+  void (*wait_gl) (GstGLSyncMeta * sync, GstGLContext * context);
+  void (*wait_cpu) (GstGLSyncMeta * sync, GstGLContext * context);
+  void (*wait_cpu_gl) (GstGLSyncMeta * sync, GstGLContext * context);
+  void (*copy) (GstGLSyncMeta * src, GstBuffer * sbuffer, GstGLSyncMeta * dest, GstBuffer * dbuffer);
+  void (*free) (GstGLSyncMeta * sync, GstGLContext * context);
+  void (*free_gl) (GstGLSyncMeta * sync, GstGLContext * context);
+};
+</pre>
+<div class="refsect3">
+<a name="GstGLSyncMeta.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstMeta.html#GstMeta"><span class="type">GstMeta</span></a> <em class="structfield"><code><a name="GstGLSyncMeta.parent"></a>parent</code></em>;</p></td>
+<td class="struct_member_description"><p>the parent <a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstMeta.html#GstMeta"><span class="type">GstMeta</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *<em class="structfield"><code><a name="GstGLSyncMeta.context"></a>context</code></em>;</p></td>
+<td class="struct_member_description"><p>the <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> used to allocate the meta</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> <em class="structfield"><code><a name="GstGLSyncMeta.data"></a>data</code></em>;</p></td>
+<td class="struct_member_description"><p>a custom data pointer for the implementation</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.set-sync"></a>set_sync</code></em> ()</p></td>
+<td class="struct_member_description"><p>set a sync point in the OpenGL command stream</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.set-sync-gl"></a>set_sync_gl</code></em> ()</p></td>
+<td class="struct_member_description"><p>the same as <em class="parameter"><code>set_sync</code></em>
+but called from <em class="parameter"><code>context</code></em>
+'s thread</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.wait"></a>wait</code></em> ()</p></td>
+<td class="struct_member_description"><p>execute a wait on the previously set sync point into the OpenGL command stream</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.wait-gl"></a>wait_gl</code></em> ()</p></td>
+<td class="struct_member_description"><p>the same as <em class="parameter"><code>wait</code></em>
+but called from <em class="parameter"><code>context</code></em>
+'s thread</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.wait-cpu"></a>wait_cpu</code></em> ()</p></td>
+<td class="struct_member_description"><p>wait for the previously set sync point to pass from the CPU</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.wait-cpu-gl"></a>wait_cpu_gl</code></em> ()</p></td>
+<td class="struct_member_description"><p>the same as <em class="parameter"><code>wait_cpu</code></em>
+but called from <em class="parameter"><code>context</code></em>
+'s thread</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.copy"></a>copy</code></em> ()</p></td>
+<td class="struct_member_description"><p>copy <em class="parameter"><code>data</code></em>
+into a new <a class="link" href="gst-plugins-base-libs-GstGLSyncMeta.html#GstGLSyncMeta" title="struct GstGLSyncMeta"><span class="type">GstGLSyncMeta</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.free"></a>free</code></em> ()</p></td>
+<td class="struct_member_description"><p>free <em class="parameter"><code>data</code></em>
+</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstGLSyncMeta.free-gl"></a>free_gl</code></em> ()</p></td>
+<td class="struct_member_description"><p>free <em class="parameter"><code>data</code></em>
+in <em class="parameter"><code>context</code></em>
+'s thread</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-BUFFER-POOL-OPTION-GL-SYNC-META:CAPS"></a><h3>GST_BUFFER_POOL_OPTION_GL_SYNC_META</h3>
+<pre class="programlisting">#define GST_BUFFER_POOL_OPTION_GL_SYNC_META "GstBufferPoolOptionGLSyncMeta"
+</pre>
+<p>An option that can be activated on bufferpools to request OpenGL
+synchronization metadata on buffers from the pool.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstGLSyncMeta.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="gst-plugins-base-libs-GstGLBaseMemory.html#GstGLBaseMemory" title="GstGLBaseMemory"><span class="type">GstGLBaseMemory</span></a>, <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

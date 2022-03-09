@@ -1,0 +1,2419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstGLShader: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gl.html" title="OpenGL Integration Library">
+<link rel="prev" href="gst-plugins-base-libs-GstGLRenderbuffer.html" title="GstGLRenderBuffer">
+<link rel="next" href="gst-plugins-base-libs-GstGLSL.html" title="GstGLSL">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstGLShader.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstGLShader.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GstGLShader.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gl.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-GstGLRenderbuffer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-libs-GstGLSL.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstGLShader"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstGLShader.top_of_page"></a>GstGLShader</span></h2>
+<p>GstGLShader — object representing an OpenGL shader program</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstGLShader.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-new" title="gst_gl_shader_new ()">gst_gl_shader_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-new-default" title="gst_gl_shader_new_default ()">gst_gl_shader_new_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-new-link-with-stages" title="gst_gl_shader_new_link_with_stages ()">gst_gl_shader_new_link_with_stages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-new-with-stages" title="gst_gl_shader_new_with_stages ()">gst_gl_shader_new_with_stages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-use" title="gst_gl_shader_use ()">gst_gl_shader_use</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-context-clear-shader" title="gst_gl_context_clear_shader ()">gst_gl_context_clear_shader</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-get-program-handle" title="gst_gl_shader_get_program_handle ()">gst_gl_shader_get_program_handle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-release" title="gst_gl_shader_release ()">gst_gl_shader_release</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-release-unlocked" title="gst_gl_shader_release_unlocked ()">gst_gl_shader_release_unlocked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-attach" title="gst_gl_shader_attach ()">gst_gl_shader_attach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-attach-unlocked" title="gst_gl_shader_attach_unlocked ()">gst_gl_shader_attach_unlocked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-compile-attach-stage" title="gst_gl_shader_compile_attach_stage ()">gst_gl_shader_compile_attach_stage</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-detach" title="gst_gl_shader_detach ()">gst_gl_shader_detach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-detach-unlocked" title="gst_gl_shader_detach_unlocked ()">gst_gl_shader_detach_unlocked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-is-linked" title="gst_gl_shader_is_linked ()">gst_gl_shader_is_linked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-link" title="gst_gl_shader_link ()">gst_gl_shader_link</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-1i" title="gst_gl_shader_set_uniform_1i ()">gst_gl_shader_set_uniform_1i</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-1f" title="gst_gl_shader_set_uniform_1f ()">gst_gl_shader_set_uniform_1f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-1fv" title="gst_gl_shader_set_uniform_1fv ()">gst_gl_shader_set_uniform_1fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-1iv" title="gst_gl_shader_set_uniform_1iv ()">gst_gl_shader_set_uniform_1iv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-2f" title="gst_gl_shader_set_uniform_2f ()">gst_gl_shader_set_uniform_2f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-2fv" title="gst_gl_shader_set_uniform_2fv ()">gst_gl_shader_set_uniform_2fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-2i" title="gst_gl_shader_set_uniform_2i ()">gst_gl_shader_set_uniform_2i</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-2iv" title="gst_gl_shader_set_uniform_2iv ()">gst_gl_shader_set_uniform_2iv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-3f" title="gst_gl_shader_set_uniform_3f ()">gst_gl_shader_set_uniform_3f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-3fv" title="gst_gl_shader_set_uniform_3fv ()">gst_gl_shader_set_uniform_3fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-3i" title="gst_gl_shader_set_uniform_3i ()">gst_gl_shader_set_uniform_3i</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-3iv" title="gst_gl_shader_set_uniform_3iv ()">gst_gl_shader_set_uniform_3iv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-4f" title="gst_gl_shader_set_uniform_4f ()">gst_gl_shader_set_uniform_4f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-4fv" title="gst_gl_shader_set_uniform_4fv ()">gst_gl_shader_set_uniform_4fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-4i" title="gst_gl_shader_set_uniform_4i ()">gst_gl_shader_set_uniform_4i</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-4iv" title="gst_gl_shader_set_uniform_4iv ()">gst_gl_shader_set_uniform_4iv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-2fv" title="gst_gl_shader_set_uniform_matrix_2fv ()">gst_gl_shader_set_uniform_matrix_2fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-2x3fv" title="gst_gl_shader_set_uniform_matrix_2x3fv ()">gst_gl_shader_set_uniform_matrix_2x3fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-2x4fv" title="gst_gl_shader_set_uniform_matrix_2x4fv ()">gst_gl_shader_set_uniform_matrix_2x4fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-3fv" title="gst_gl_shader_set_uniform_matrix_3fv ()">gst_gl_shader_set_uniform_matrix_3fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-3x2fv" title="gst_gl_shader_set_uniform_matrix_3x2fv ()">gst_gl_shader_set_uniform_matrix_3x2fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-3x4fv" title="gst_gl_shader_set_uniform_matrix_3x4fv ()">gst_gl_shader_set_uniform_matrix_3x4fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-4fv" title="gst_gl_shader_set_uniform_matrix_4fv ()">gst_gl_shader_set_uniform_matrix_4fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-4x2fv" title="gst_gl_shader_set_uniform_matrix_4x2fv ()">gst_gl_shader_set_uniform_matrix_4x2fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-set-uniform-matrix-4x3fv" title="gst_gl_shader_set_uniform_matrix_4x3fv ()">gst_gl_shader_set_uniform_matrix_4x3fv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-get-attribute-location" title="gst_gl_shader_get_attribute_location ()">gst_gl_shader_get_attribute_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-bind-attribute-location" title="gst_gl_shader_bind_attribute_location ()">gst_gl_shader_bind_attribute_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-bind-frag-data-location" title="gst_gl_shader_bind_frag_data_location ()">gst_gl_shader_bind_frag_data_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-string-fragment-get-default" title="gst_gl_shader_string_fragment_get_default ()">gst_gl_shader_string_fragment_get_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLShader.html#gst-gl-shader-string-fragment-external-oes-get-default" title="gst_gl_shader_string_fragment_external_oes_get_default ()">gst_gl_shader_string_fragment_external_oes_get_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GstGLShader.html#GstGLShader--linked" title="The “linked” property">linked</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstGLShader.html#GstGLShader-struct" title="GstGLShader">GstGLShader</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> GstGLShader
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/gl/gl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-gl-shader-new"></a><h3>gst_gl_shader_new ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+gst_gl_shader_new (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-new.returns"></a><h4>Returns</h4>
+<p>a new empty <em class="parameter"><code>shader</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-new-default"></a><h3>gst_gl_shader_new_default ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+gst_gl_shader_new_default (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-new-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that is filled on failure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-new-default.returns"></a><h4>Returns</h4>
+<p>a default <em class="parameter"><code>shader</code></em>
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on failure. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-new-link-with-stages"></a><h3>gst_gl_shader_new_link_with_stages ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+gst_gl_shader_new_link_with_stages (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>,
+                                    <em class="parameter"><code>...</code></em>);</pre>
+<p>Each stage will attempt to be compiled and attached to <em class="parameter"><code>shader</code></em>
+.  Then
+the shader will be linked. On error, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> will be returned and <em class="parameter"><code>error</code></em>
+ will
+contain the details of the error.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-new-link-with-stages.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>a NULL terminated list of <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a>'s</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-new-link-with-stages.returns"></a><h4>Returns</h4>
+<p>a new <em class="parameter"><code>shader</code></em>
+with the specified stages. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-new-with-stages"></a><h3>gst_gl_shader_new_with_stages ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="returnvalue">GstGLShader</span></a> *
+gst_gl_shader_new_with_stages (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>,
+                               <em class="parameter"><code>...</code></em>);</pre>
+<p>Each stage will attempt to be compiled and attached to <em class="parameter"><code>shader</code></em>
+.  On error,
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> will be returned and <em class="parameter"><code>error</code></em>
+ will contain the details of the error.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-new-with-stages.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>a NULL terminated list of <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a>'s</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-new-with-stages.returns"></a><h4>Returns</h4>
+<p>a new <em class="parameter"><code>shader</code></em>
+with the specified stages. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-use"></a><h3>gst_gl_shader_use ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_use (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>);</pre>
+<p>Mark's <em class="parameter"><code>shader</code></em>
+ as being used for the next GL draw command.</p>
+<p>Note: must be called in the GL thread and <em class="parameter"><code>shader</code></em>
+ must have been linked.</p>
+<div class="refsect3">
+<a name="gst-gl-shader-use.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-context-clear-shader"></a><h3>gst_gl_context_clear_shader ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_context_clear_shader (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+<p>Clear's the currently set shader from the GL state machine.</p>
+<p>Note: must be called in the GL thread.</p>
+<div class="refsect3">
+<a name="gst-gl-context-clear-shader.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-get-program-handle"></a><h3>gst_gl_shader_get_program_handle ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gst_gl_shader_get_program_handle (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-shader-get-program-handle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-get-program-handle.returns"></a><h4>Returns</h4>
+<p> the GL program handle for this shader</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-release"></a><h3>gst_gl_shader_release ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_release (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>);</pre>
+<p>Releases the shader and stages.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-release.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-release-unlocked"></a><h3>gst_gl_shader_release_unlocked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_release_unlocked (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>);</pre>
+<p>Releases the shader and stages.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-release-unlocked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-attach"></a><h3>gst_gl_shader_attach ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_shader_attach (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                      <em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<p>Attaches <em class="parameter"><code>stage</code></em>
+ to <em class="parameter"><code>shader</code></em>
+.  <em class="parameter"><code>stage</code></em>
+ must have been successfully compiled
+with <a class="link" href="GstGLSLStage.html#gst-glsl-stage-compile" title="gst_glsl_stage_compile ()"><code class="function">gst_glsl_stage_compile()</code></a>.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-attach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> to attach. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-attach.returns"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>stage</code></em>
+could be attached to <em class="parameter"><code>shader</code></em>
+</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-attach-unlocked"></a><h3>gst_gl_shader_attach_unlocked ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_shader_attach_unlocked (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<p>Attaches <em class="parameter"><code>stage</code></em>
+ to <em class="parameter"><code>shader</code></em>
+.  <em class="parameter"><code>stage</code></em>
+ must have been successfully compiled
+with <a class="link" href="GstGLSLStage.html#gst-glsl-stage-compile" title="gst_glsl_stage_compile ()"><code class="function">gst_glsl_stage_compile()</code></a>.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-attach-unlocked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> to attach. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-attach-unlocked.returns"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>stage</code></em>
+could be attached to <em class="parameter"><code>shader</code></em>
+</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-compile-attach-stage"></a><h3>gst_gl_shader_compile_attach_stage ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_shader_compile_attach_stage (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Compiles <em class="parameter"><code>stage</code></em>
+ and attaches it to <em class="parameter"><code>shader</code></em>
+.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-compile-attach-stage.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> to attach</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-compile-attach-stage.returns"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>stage</code></em>
+could be compiled and attached to <em class="parameter"><code>shader</code></em>
+</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-detach"></a><h3>gst_gl_shader_detach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_detach (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                      <em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<p>Detaches <em class="parameter"><code>stage</code></em>
+ from <em class="parameter"><code>shader</code></em>
+.  <em class="parameter"><code>stage</code></em>
+ must have been successfully attached
+to <em class="parameter"><code>shader</code></em>
+ with <a class="link" href="GstGLShader.html#gst-gl-shader-attach" title="gst_gl_shader_attach ()"><code class="function">gst_gl_shader_attach()</code></a> or <a class="link" href="GstGLShader.html#gst-gl-shader-attach-unlocked" title="gst_gl_shader_attach_unlocked ()"><code class="function">gst_gl_shader_attach_unlocked()</code></a>.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-detach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> to attach</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-detach-unlocked"></a><h3>gst_gl_shader_detach_unlocked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_detach_unlocked (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> *stage</code></em>);</pre>
+<p>Detaches <em class="parameter"><code>stage</code></em>
+ from <em class="parameter"><code>shader</code></em>
+.  <em class="parameter"><code>stage</code></em>
+ must have been successfully attached
+to <em class="parameter"><code>shader</code></em>
+ with <a class="link" href="GstGLShader.html#gst-gl-shader-attach" title="gst_gl_shader_attach ()"><code class="function">gst_gl_shader_attach()</code></a> or <a class="link" href="GstGLShader.html#gst-gl-shader-attach-unlocked" title="gst_gl_shader_attach_unlocked ()"><code class="function">gst_gl_shader_attach_unlocked()</code></a>.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-detach-unlocked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a> to attach</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-is-linked"></a><h3>gst_gl_shader_is_linked ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_shader_is_linked (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>);</pre>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-is-linked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-is-linked.returns"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>shader</code></em>
+has been successfully linked</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-link"></a><h3>gst_gl_shader_link ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_shader_link (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Links the current list of <a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a>'s in <em class="parameter"><code>shader</code></em>
+.</p>
+<p>Note: must be called in the GL thread</p>
+<div class="refsect3">
+<a name="gst-gl-shader-link.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-link.returns"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>shader</code></em>
+could be linked together.</p>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-1i"></a><h3>gst_gl_shader_set_uniform_1i ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_1i (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>);</pre>
+<p>Perform <code class="function">glUniform1i()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-1i.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-1f"></a><h3>gst_gl_shader_set_uniform_1f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_1f (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> value</code></em>);</pre>
+<p>Perform <code class="function">glUniform1f()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-1f.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-1fv"></a><h3>gst_gl_shader_set_uniform_1fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_1fv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform1fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-1fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-1iv"></a><h3>gst_gl_shader_set_uniform_1iv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_1iv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform1iv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-1iv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-2f"></a><h3>gst_gl_shader_set_uniform_2f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_2f (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v0</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v1</code></em>);</pre>
+<p>Perform <code class="function">glUniform2f()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-2f.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v0</p></td>
+<td class="parameter_description"><p>first value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v1</p></td>
+<td class="parameter_description"><p>second value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-2fv"></a><h3>gst_gl_shader_set_uniform_2fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_2fv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform2fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-2fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-2i"></a><h3>gst_gl_shader_set_uniform_2i ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_2i (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v0</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v1</code></em>);</pre>
+<p>Perform <code class="function">glUniform2i()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-2i.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v0</p></td>
+<td class="parameter_description"><p>first value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v1</p></td>
+<td class="parameter_description"><p>second value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-2iv"></a><h3>gst_gl_shader_set_uniform_2iv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_2iv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform2iv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-2iv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-3f"></a><h3>gst_gl_shader_set_uniform_3f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_3f (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v0</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v1</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v2</code></em>);</pre>
+<p>Perform <code class="function">glUniform3f()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-3f.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v0</p></td>
+<td class="parameter_description"><p>first value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v1</p></td>
+<td class="parameter_description"><p>second value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v2</p></td>
+<td class="parameter_description"><p>third value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-3fv"></a><h3>gst_gl_shader_set_uniform_3fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_3fv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform3fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-3fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-3i"></a><h3>gst_gl_shader_set_uniform_3i ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_3i (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v0</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v1</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v2</code></em>);</pre>
+<p>Perform <code class="function">glUniform3i()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-3i.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v0</p></td>
+<td class="parameter_description"><p>first value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v1</p></td>
+<td class="parameter_description"><p>second value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v2</p></td>
+<td class="parameter_description"><p>third value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-3iv"></a><h3>gst_gl_shader_set_uniform_3iv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_3iv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform3iv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-3iv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-4f"></a><h3>gst_gl_shader_set_uniform_4f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_4f (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v0</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v1</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v2</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> v3</code></em>);</pre>
+<p>Perform <code class="function">glUniform4f()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-4f.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v0</p></td>
+<td class="parameter_description"><p>first value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v1</p></td>
+<td class="parameter_description"><p>second value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v2</p></td>
+<td class="parameter_description"><p>third value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v3</p></td>
+<td class="parameter_description"><p>fourth value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-4fv"></a><h3>gst_gl_shader_set_uniform_4fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_4fv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform4fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-4fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-4i"></a><h3>gst_gl_shader_set_uniform_4i ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_4i (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v0</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v1</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v2</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> v3</code></em>);</pre>
+<p>Perform <code class="function">glUniform4i()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-4i.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v0</p></td>
+<td class="parameter_description"><p>first value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v1</p></td>
+<td class="parameter_description"><p>second value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v2</p></td>
+<td class="parameter_description"><p>third value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v3</p></td>
+<td class="parameter_description"><p>fourth value to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-4iv"></a><h3>gst_gl_shader_set_uniform_4iv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_4iv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> count</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniform4iv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-4iv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=count]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-2fv"></a><h3>gst_gl_shader_set_uniform_matrix_2fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_2fv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix2fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-2fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 2x2 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>matrix to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-2x3fv"></a><h3>gst_gl_shader_set_uniform_matrix_2x3fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_2x3fv
+                               (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix2x3fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-2x3fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 2x3 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-2x4fv"></a><h3>gst_gl_shader_set_uniform_matrix_2x4fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_2x4fv
+                               (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix2x4fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-2x4fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 2x4 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-3fv"></a><h3>gst_gl_shader_set_uniform_matrix_3fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_3fv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix3fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-3fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 3x3 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-3x2fv"></a><h3>gst_gl_shader_set_uniform_matrix_3x2fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_3x2fv
+                               (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix3x2fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-3x2fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 3x2 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-3x4fv"></a><h3>gst_gl_shader_set_uniform_matrix_3x4fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_3x4fv
+                               (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix3x4fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-3x4fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 3x4 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-4fv"></a><h3>gst_gl_shader_set_uniform_matrix_4fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_4fv (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix4fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-4fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 4x4 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-4x2fv"></a><h3>gst_gl_shader_set_uniform_matrix_4x2fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_4x2fv
+                               (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix4x2fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-4x2fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 4x2 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-set-uniform-matrix-4x3fv"></a><h3>gst_gl_shader_set_uniform_matrix_4x3fv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_set_uniform_matrix_4x3fv
+                               (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> transpose</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>Perform <code class="function">glUniformMatrix4x3fv()</code> for <em class="parameter"><code>name</code></em>
+ on <em class="parameter"><code>shader</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-shader-set-uniform-matrix-4x3fv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the uniform</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>number of 4x3 matrices to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transpose</p></td>
+<td class="parameter_description"><p>transpose the matrix</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>values to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-get-attribute-location"></a><h3>gst_gl_shader_get_attribute_location ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_gl_shader_get_attribute_location (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-shader-get-attribute-location.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the attribute</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-get-attribute-location.returns"></a><h4>Returns</h4>
+<p> the attribute index for <em class="parameter"><code>name</code></em>
+in <em class="parameter"><code>shader</code></em>
+or -1 on failure</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-bind-attribute-location"></a><h3>gst_gl_shader_bind_attribute_location ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_bind_attribute_location (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> index</code></em>,
+                                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Bind attribute <em class="parameter"><code>name</code></em>
+ to the specified location <em class="parameter"><code>index</code></em>
+ using
+<code class="function">glBindAttributeLocation()</code>.</p>
+<div class="refsect3">
+<a name="gst-gl-shader-bind-attribute-location.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>attribute index to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the attribute</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-bind-frag-data-location"></a><h3>gst_gl_shader_bind_frag_data_location ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_shader_bind_frag_data_location (<em class="parameter"><code><a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a> *shader</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> index</code></em>,
+                                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Bind attribute <em class="parameter"><code>name</code></em>
+ to the specified location <em class="parameter"><code>index</code></em>
+ using
+<code class="function">glBindFragDataLocation()</code>.</p>
+<div class="refsect3">
+<a name="gst-gl-shader-bind-frag-data-location.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLShader.html" title="GstGLShader"><span class="type">GstGLShader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>attribute index to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the attribute</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-string-fragment-get-default"></a><h3>gst_gl_shader_string_fragment_get_default ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_gl_shader_string_fragment_get_default
+                               (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                                <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a> version</code></em>,
+                                <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a> profile</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-shader-string-fragment-get-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-string-fragment-get-default.returns"></a><h4>Returns</h4>
+<p> a passthrough shader string for copying an input texture to
+the output</p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-shader-string-fragment-external-oes-get-default"></a><h3>gst_gl_shader_string_fragment_external_oes_get_default ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_gl_shader_string_fragment_external_oes_get_default
+                               (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                                <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a> version</code></em>,
+                                <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a> profile</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-shader-string-fragment-external-oes-get-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLVersion" title="enum GstGLSLVersion"><span class="type">GstGLSLVersion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstGLSL.html#GstGLSLProfile" title="enum GstGLSLProfile"><span class="type">GstGLSLProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-shader-string-fragment-external-oes-get-default.returns"></a><h4>Returns</h4>
+<p> a passthrough shader string for copying an input external-oes
+texture to the output</p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLShader-struct"></a><h3>GstGLShader</h3>
+<pre class="programlisting">typedef struct _GstGLShader GstGLShader;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstGLShader--linked"></a><h3>The <code class="literal">“linked”</code> property</h3>
+<pre class="programlisting">  “linked”                   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Shader link status.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLShader.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GstGLSLStage.html" title="GstGLSLStage"><span class="type">GstGLSLStage</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

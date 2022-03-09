@@ -1,0 +1,746 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstGLFormat: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gl.html" title="OpenGL Integration Library">
+<link rel="prev" href="gst-plugins-base-libs-OpenGL-debugging.html" title="OpenGL debugging">
+<link rel="next" href="gst-plugins-base-libs-OpenGL-Miscellaneous-Utilities.html" title="GstGLUtils">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-libs-OpenGL-Formats.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gl.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-OpenGL-debugging.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-libs-OpenGL-Miscellaneous-Utilities.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-libs-OpenGL-Formats"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-libs-OpenGL-Formats.top_of_page"></a>GstGLFormat</span></h2>
+<p>GstGLFormat — utilities for dealing with OpenGL formats</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-OpenGL-Formats.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-format-is-supported" title="gst_gl_format_is_supported ()">gst_gl_format_is_supported</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-format-type-n-bytes" title="gst_gl_format_type_n_bytes ()">gst_gl_format_type_n_bytes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="returnvalue">GstGLFormat</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-format-from-video-info" title="gst_gl_format_from_video_info ()">gst_gl_format_from_video_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-sized-gl-format-from-gl-format-type" title="gst_gl_sized_gl_format_from_gl_format_type ()">gst_gl_sized_gl_format_from_gl_format_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="returnvalue">GstGLTextureTarget</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-texture-target-from-string" title="gst_gl_texture_target_from_string ()">gst_gl_texture_target_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-texture-target-to-string" title="gst_gl_texture_target_to_string ()">gst_gl_texture_target_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-texture-target-to-gl" title="gst_gl_texture_target_to_gl ()">gst_gl_texture_target_to_gl</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="returnvalue">GstGLTextureTarget</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-texture-target-from-gl" title="gst_gl_texture_target_from_gl ()">gst_gl_texture_target_from_gl</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-texture-target-to-buffer-pool-option" title="gst_gl_texture_target_to_buffer_pool_option ()">gst_gl_texture_target_to_buffer_pool_option</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#gst-gl-format-type-from-sized-gl-format" title="gst_gl_format_type_from_sized_gl_format ()">gst_gl_format_type_from_sized_gl_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-OpenGL-Formats.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget">GstGLTextureTarget</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-2D-STR:CAPS" title="GST_GL_TEXTURE_TARGET_2D_STR">GST_GL_TEXTURE_TARGET_2D_STR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-RECTANGLE-STR:CAPS" title="GST_GL_TEXTURE_TARGET_RECTANGLE_STR">GST_GL_TEXTURE_TARGET_RECTANGLE_STR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-EXTERNAL-OES-STR:CAPS" title="GST_GL_TEXTURE_TARGET_EXTERNAL_OES_STR">GST_GL_TEXTURE_TARGET_EXTERNAL_OES_STR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-BUFFER-POOL-OPTION-GL-TEXTURE-TARGET-2D:CAPS" title="GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_2D">GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_2D</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-BUFFER-POOL-OPTION-GL-TEXTURE-TARGET-RECTANGLE:CAPS" title="GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_RECTANGLE">GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_RECTANGLE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-BUFFER-POOL-OPTION-GL-TEXTURE-TARGET-EXTERNAL-OES:CAPS" title="GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_EXTERNAL_OES">GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_EXTERNAL_OES</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat">GstGLFormat</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-OpenGL-Formats.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/gl/gl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-OpenGL-Formats.description"></a><h2>Description</h2>
+<p>Some useful utilities for converting between various formats and OpenGL
+formats.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-OpenGL-Formats.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-gl-format-is-supported"></a><h3>gst_gl_format_is_supported ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_format_is_supported (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                            <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="type">GstGLFormat</span></a> format</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-format-is-supported.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="type">GstGLFormat</span></a> to check is supported by <em class="parameter"><code>context</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-format-is-supported.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>format</code></em>
+is supported by <em class="parameter"><code>context</code></em>
+based on the OpenGL API,
+version, or available OpenGL extension/s.</p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-format-type-n-bytes"></a><h3>gst_gl_format_type_n_bytes ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_gl_format_type_n_bytes (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> format</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> type</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-format-type-n-bytes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>the OpenGL format, <code class="literal">GL_RGBA</code>, <code class="literal">GL_LUMINANCE</code>, etc</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the OpenGL type, <code class="literal">GL_UNSIGNED_BYTE</code>, <code class="literal">GL_FLOAT</code>, etc</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-format-type-n-bytes.returns"></a><h4>Returns</h4>
+<p> the number of bytes the specified <em class="parameter"><code>format</code></em>
+, <em class="parameter"><code>type</code></em>
+combination takes
+per pixel</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-format-from-video-info"></a><h3>gst_gl_format_from_video_info ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="returnvalue">GstGLFormat</span></a>
+gst_gl_format_from_video_info (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                               <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoInfo" title="struct GstVideoInfo"><span class="type">GstVideoInfo</span></a> *vinfo</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> plane</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-format-from-video-info.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vinfo</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoInfo" title="struct GstVideoInfo"><span class="type">GstVideoInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>plane</p></td>
+<td class="parameter_description"><p>the plane number in <em class="parameter"><code>vinfo</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-format-from-video-info.returns"></a><h4>Returns</h4>
+<p> the <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="type">GstGLFormat</span></a> necessary for holding the data in <em class="parameter"><code>plane</code></em>
+of <em class="parameter"><code>vinfo</code></em>
+</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-sized-gl-format-from-gl-format-type"></a><h3>gst_gl_sized_gl_format_from_gl_format_type ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_gl_sized_gl_format_from_gl_format_type
+                               (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> format</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> type</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-sized-gl-format-from-gl-format-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>an OpenGL format, <code class="literal">GL_RGBA</code>, <code class="literal">GL_LUMINANCE</code>, etc</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>an OpenGL type, <code class="literal">GL_UNSIGNED_BYTE</code>, <code class="literal">GL_FLOAT</code>, etc</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-sized-gl-format-from-gl-format-type.returns"></a><h4>Returns</h4>
+<p> the sized internal format specified by <em class="parameter"><code>format</code></em>
+and <em class="parameter"><code>type</code></em>
+that can
+be used in <em class="parameter"><code>context</code></em>
+</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-texture-target-from-string"></a><h3>gst_gl_texture_target_from_string ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="returnvalue">GstGLTextureTarget</span></a>
+gst_gl_texture_target_from_string (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-texture-target-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>a string equivalant to one of the GST_GL_TEXTURE_TARGET_*_STR values</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-texture-target-from-string.returns"></a><h4>Returns</h4>
+<p> the <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a> represented by <em class="parameter"><code>str</code></em>
+or
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-NONE:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_NONE</code></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-texture-target-to-string"></a><h3>gst_gl_texture_target_to_string ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_gl_texture_target_to_string (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a> target</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-texture-target-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-texture-target-to-string.returns"></a><h4>Returns</h4>
+<p> the stringified version of <em class="parameter"><code>target</code></em>
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-texture-target-to-gl"></a><h3>gst_gl_texture_target_to_gl ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_gl_texture_target_to_gl (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a> target</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-texture-target-to-gl.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-texture-target-to-gl.returns"></a><h4>Returns</h4>
+<p> the OpenGL value for binding the <em class="parameter"><code>target</code></em>
+with <code class="function">glBindTexture()</code> and
+similar functions or 0</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-texture-target-from-gl"></a><h3>gst_gl_texture_target_from_gl ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="returnvalue">GstGLTextureTarget</span></a>
+gst_gl_texture_target_from_gl (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> target</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-texture-target-from-gl.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>an OpenGL texture binding target</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-texture-target-from-gl.returns"></a><h4>Returns</h4>
+<p> the <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a> that's equiavalant to <em class="parameter"><code>target</code></em>
+or
+<a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-NONE:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_NONE</code></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-texture-target-to-buffer-pool-option"></a><h3>gst_gl_texture_target_to_buffer_pool_option ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_gl_texture_target_to_buffer_pool_option
+                               (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a> target</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-texture-target-to-buffer-pool-option.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLTextureTarget" title="enum GstGLTextureTarget"><span class="type">GstGLTextureTarget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-texture-target-to-buffer-pool-option.returns"></a><h4>Returns</h4>
+<p> a string representing the <em class="parameter"><code>GstBufferPoolOption</code></em>
+specified by <em class="parameter"><code>target</code></em>
+</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-format-type-from-sized-gl-format"></a><h3>gst_gl_format_type_from_sized_gl_format ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_format_type_from_sized_gl_format
+                               (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="type">GstGLFormat</span></a> format</code></em>,
+                                <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="type">GstGLFormat</span></a> *unsized_format</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *gl_type</code></em>);</pre>
+<p>Get the unsized format and type from <em class="parameter"><code>format</code></em>
+ for usage in glReadPixels,
+glTex{Sub}Image*, glTexImage* and similar functions.</p>
+<div class="refsect3">
+<a name="gst-gl-format-type-from-sized-gl-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>the sized internal <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="type">GstGLFormat</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unsized_format</p></td>
+<td class="parameter_description"><p>location for the resulting unsized <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GstGLFormat" title="enum GstGLFormat"><span class="type">GstGLFormat</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gl_type</p></td>
+<td class="parameter_description"><p>location for the resulting GL type. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-OpenGL-Formats.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLTextureTarget"></a><h3>enum GstGLTextureTarget</h3>
+<div class="refsect3">
+<a name="GstGLTextureTarget.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEXTURE-TARGET-NONE:CAPS"></a>GST_GL_TEXTURE_TARGET_NONE</p></td>
+<td class="enum_member_description">
+<p>no texture target</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEXTURE-TARGET-2D:CAPS"></a>GST_GL_TEXTURE_TARGET_2D</p></td>
+<td class="enum_member_description">
+<p>2D texture target</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEXTURE-TARGET-RECTANGLE:CAPS"></a>GST_GL_TEXTURE_TARGET_RECTANGLE</p></td>
+<td class="enum_member_description">
+<p>rectangle texture target</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEXTURE-TARGET-EXTERNAL-OES:CAPS"></a>GST_GL_TEXTURE_TARGET_EXTERNAL_OES</p></td>
+<td class="enum_member_description">
+<p>external oes texture target</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix08.html#api-index-1.8">1.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-GL-TEXTURE-TARGET-2D-STR:CAPS"></a><h3>GST_GL_TEXTURE_TARGET_2D_STR</h3>
+<pre class="programlisting">#define GST_GL_TEXTURE_TARGET_2D_STR "2D"
+</pre>
+<p>String used for <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-2D:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_2D</code></a> in things like caps values</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-GL-TEXTURE-TARGET-RECTANGLE-STR:CAPS"></a><h3>GST_GL_TEXTURE_TARGET_RECTANGLE_STR</h3>
+<pre class="programlisting">#define GST_GL_TEXTURE_TARGET_RECTANGLE_STR "rectangle"
+</pre>
+<p>String used for <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-RECTANGLE:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_RECTANGLE</code></a> in things like caps values</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-GL-TEXTURE-TARGET-EXTERNAL-OES-STR:CAPS"></a><h3>GST_GL_TEXTURE_TARGET_EXTERNAL_OES_STR</h3>
+<pre class="programlisting">#define GST_GL_TEXTURE_TARGET_EXTERNAL_OES_STR "external-oes"
+</pre>
+<p>String used for <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-EXTERNAL-OES:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_EXTERNAL_OES</code></a> in things like caps values</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-BUFFER-POOL-OPTION-GL-TEXTURE-TARGET-2D:CAPS"></a><h3>GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_2D</h3>
+<pre class="programlisting">#define GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_2D "GstBufferPoolOptionGLTextureTarget2D"
+</pre>
+<p>String used for <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-2D:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_2D</code></a> as a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBufferPool.html#GstBufferPool-struct"><span class="type">GstBufferPool</span></a> pool option</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-BUFFER-POOL-OPTION-GL-TEXTURE-TARGET-RECTANGLE:CAPS"></a><h3>GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_RECTANGLE</h3>
+<pre class="programlisting">#define GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_RECTANGLE "GstBufferPoolOptionGLTextureTargetRectangle"
+</pre>
+<p>String used for <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-RECTANGLE:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_RECTANGLE</code></a> as a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBufferPool.html#GstBufferPool-struct"><span class="type">GstBufferPool</span></a> pool option</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-BUFFER-POOL-OPTION-GL-TEXTURE-TARGET-EXTERNAL-OES:CAPS"></a><h3>GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_EXTERNAL_OES</h3>
+<pre class="programlisting">#define GST_BUFFER_POOL_OPTION_GL_TEXTURE_TARGET_EXTERNAL_OES "GstBufferPoolOptionGLTextureTargetExternalOES"
+</pre>
+<p>String used for <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-TEXTURE-TARGET-EXTERNAL-OES:CAPS"><code class="literal">GST_GL_TEXTURE_TARGET_EXTERNAL_OES</code></a> as a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBufferPool.html#GstBufferPool-struct"><span class="type">GstBufferPool</span></a> pool option</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLFormat"></a><h3>enum GstGLFormat</h3>
+<div class="refsect3">
+<a name="GstGLFormat.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-LUMINANCE:CAPS"></a>GST_GL_LUMINANCE</p></td>
+<td class="enum_member_description">
+<p>Single component replicated across R, G, and B textures
+                   components</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-ALPHA:CAPS"></a>GST_GL_ALPHA</p></td>
+<td class="enum_member_description">
+<p>Single component stored in the A texture component</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-LUMINANCE-ALPHA:CAPS"></a>GST_GL_LUMINANCE_ALPHA</p></td>
+<td class="enum_member_description">
+<p>Combination of <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-LUMINANCE:CAPS"><span class="type">GST_GL_LUMINANCE</span></a> and <a class="link" href="gst-plugins-base-libs-OpenGL-Formats.html#GST-GL-ALPHA:CAPS"><span class="type">GST_GL_ALPHA</span></a></p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RED:CAPS"></a>GST_GL_RED</p></td>
+<td class="enum_member_description">
+<p>Single component stored in the R texture component</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-R8:CAPS"></a>GST_GL_R8</p></td>
+<td class="enum_member_description">
+<p>Single 8-bit component stored in the R texture component</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RG:CAPS"></a>GST_GL_RG</p></td>
+<td class="enum_member_description">
+<p>Two components stored in the R and G texture components</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RG8:CAPS"></a>GST_GL_RG8</p></td>
+<td class="enum_member_description">
+<p>Two 8-bit components stored in the R and G texture components</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RGB:CAPS"></a>GST_GL_RGB</p></td>
+<td class="enum_member_description">
+<p>Three components stored in the R, G, and B texture components</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RGB8:CAPS"></a>GST_GL_RGB8</p></td>
+<td class="enum_member_description">
+<p>Three 8-bit components stored in the R, G, and B
+              texture components</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RGB565:CAPS"></a>GST_GL_RGB565</p></td>
+<td class="enum_member_description">
+<p>Three components of bit depth 5, 6 and 5 stored in the R, G,
+                and B texture components respectively.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RGB16:CAPS"></a>GST_GL_RGB16</p></td>
+<td class="enum_member_description">
+<p>Three 16-bit components stored in the R, G, and B
+              texture components</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RGBA:CAPS"></a>GST_GL_RGBA</p></td>
+<td class="enum_member_description">
+<p>Four components stored in the R, G, B, and A texture
+              components respectively.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RGBA8:CAPS"></a>GST_GL_RGBA8</p></td>
+<td class="enum_member_description">
+<p>Four 8-bit components stored in the R, G, B, and A texture
+               components respectively.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-RGBA16:CAPS"></a>GST_GL_RGBA16</p></td>
+<td class="enum_member_description">
+<p>Four 16-bit components stored in the R, G, B, and A texture
+               components respectively.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-DEPTH-COMPONENT16:CAPS"></a>GST_GL_DEPTH_COMPONENT16</p></td>
+<td class="enum_member_description">
+<p>A single 16-bit component for depth information.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-DEPTH24-STENCIL8:CAPS"></a>GST_GL_DEPTH24_STENCIL8</p></td>
+<td class="enum_member_description">
+<p>A 24-bit component for depth information and
+                          a 8-bit component for stencil informat.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-OpenGL-Formats.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="gst-plugins-base-libs-GstGLBaseMemory.html#GstGLBaseMemory" title="GstGLBaseMemory"><span class="type">GstGLBaseMemory</span></a>, <a class="link" href="gst-plugins-base-libs-GstGLMemory.html#GstGLMemory" title="GstGLMemory"><span class="type">GstGLMemory</span></a>, <a class="link" href="GstGLFramebuffer.html" title="GstGLFramebuffer"><span class="type">GstGLFramebuffer</span></a>, <a class="link" href="gst-plugins-base-libs-GstGLBuffer.html#GstGLBuffer" title="GstGLBuffer"><span class="type">GstGLBuffer</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

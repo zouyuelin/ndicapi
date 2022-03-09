@@ -1,0 +1,2 @@
+This directory contains the minimal files for the dependencies.
+If instead, you wish to build these dependencies, adjust the configurations in existing project files to point to the correct include and lib paths.

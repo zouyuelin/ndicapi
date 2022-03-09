@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstGLUpload: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gl.html" title="OpenGL Integration Library">
+<link rel="prev" href="gst-plugins-base-libs-GstGLSyncMeta.html" title="GstGLSyncMeta">
+<link rel="next" href="GstGLViewConvert.html" title="GstGLViewConvert">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstGLUpload.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstGLUpload.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gl.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-GstGLSyncMeta.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GstGLViewConvert.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstGLUpload"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstGLUpload.top_of_page"></a>GstGLUpload</span></h2>
+<p>GstGLUpload — an object that uploads to GL textures</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstGLUpload.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="returnvalue">GstGLUpload</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-new" title="gst_gl_upload_new ()">gst_gl_upload_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-set-context" title="gst_gl_upload_set_context ()">gst_gl_upload_set_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-get-caps" title="gst_gl_upload_get_caps ()">gst_gl_upload_get_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-set-caps" title="gst_gl_upload_set_caps ()">gst_gl_upload_set_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-propose-allocation" title="gst_gl_upload_propose_allocation ()">gst_gl_upload_propose_allocation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-transform-caps" title="gst_gl_upload_transform_caps ()">gst_gl_upload_transform_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLUpload.html#GstGLUploadReturn" title="enum GstGLUploadReturn"><span class="returnvalue">GstGLUploadReturn</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-perform-with-buffer" title="gst_gl_upload_perform_with_buffer ()">gst_gl_upload_perform_with_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLUpload.html#gst-gl-upload-get-input-template-caps" title="gst_gl_upload_get_input_template_caps ()">gst_gl_upload_get_input_template_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLUpload.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstGLUpload.html#GstGLUpload-struct" title="GstGLUpload">GstGLUpload</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GstGLUpload.html#GstGLUploadReturn" title="enum GstGLUploadReturn">GstGLUploadReturn</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLUpload.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> GstGLUpload
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLUpload.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/gl/gl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLUpload.description"></a><h2>Description</h2>
+<p><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> is an object that uploads data from system memory into GL textures.</p>
+<p>A <a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> can be created with <a class="link" href="GstGLUpload.html#gst-gl-upload-new" title="gst_gl_upload_new ()"><code class="function">gst_gl_upload_new()</code></a></p>
+</div>
+<div class="refsect1">
+<a name="GstGLUpload.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-gl-upload-new"></a><h3>gst_gl_upload_new ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="returnvalue">GstGLUpload</span></a> *
+gst_gl_upload_new (<em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-upload-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-upload-new.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> object. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-upload-set-context"></a><h3>gst_gl_upload_set_context ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_upload_set_context (<em class="parameter"><code><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> *upload</code></em>,
+                           <em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-upload-get-caps"></a><h3>gst_gl_upload_get_caps ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_upload_get_caps (<em class="parameter"><code><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> *upload</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> **in_caps</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> **out_caps</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-upload-get-caps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>upload</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_caps</p></td>
+<td class="parameter_description"><p>the input <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>][<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_caps</p></td>
+<td class="parameter_description"><p>the output <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>][<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-upload-set-caps"></a><h3>gst_gl_upload_set_caps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_upload_set_caps (<em class="parameter"><code><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> *upload</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *in_caps</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *out_caps</code></em>);</pre>
+<p>Initializes <em class="parameter"><code>upload</code></em>
+ with the information required for upload.</p>
+<div class="refsect3">
+<a name="gst-gl-upload-set-caps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>upload</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_caps</p></td>
+<td class="parameter_description"><p>input <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_caps</p></td>
+<td class="parameter_description"><p>output <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-upload-set-caps.returns"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>in_caps</code></em>
+and <em class="parameter"><code>out_caps</code></em>
+could be set on <em class="parameter"><code>upload</code></em>
+</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-upload-propose-allocation"></a><h3>gst_gl_upload_propose_allocation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_upload_propose_allocation (<em class="parameter"><code><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> *upload</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstQuery.html#GstQuery-struct"><span class="type">GstQuery</span></a> *decide_query</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstQuery.html#GstQuery-struct"><span class="type">GstQuery</span></a> *query</code></em>);</pre>
+<p>Adds the required allocation parameters to support uploading.</p>
+<div class="refsect3">
+<a name="gst-gl-upload-propose-allocation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>upload</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>decide_query</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstQuery.html#GstQuery-struct"><span class="type">GstQuery</span></a> from a decide allocation. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>query</p></td>
+<td class="parameter_description"><p>the proposed allocation query</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-upload-transform-caps"></a><h3>gst_gl_upload_transform_caps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+gst_gl_upload_transform_caps (<em class="parameter"><code><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> *upload</code></em>,
+                              <em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPadDirection"><span class="type">GstPadDirection</span></a> direction</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *caps</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *filter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-upload-perform-with-buffer"></a><h3>gst_gl_upload_perform_with_buffer ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLUpload.html#GstGLUploadReturn" title="enum GstGLUploadReturn"><span class="returnvalue">GstGLUploadReturn</span></a>
+gst_gl_upload_perform_with_buffer (<em class="parameter"><code><a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> *upload</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *buffer</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> **outbuf_ptr</code></em>);</pre>
+<p>Uploads <em class="parameter"><code>buffer</code></em>
+ using the transformation specified by
+<a class="link" href="GstGLUpload.html#gst-gl-upload-set-caps" title="gst_gl_upload_set_caps ()"><code class="function">gst_gl_upload_set_caps()</code></a> creating a new <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> in <em class="parameter"><code>outbuf_ptr</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-gl-upload-perform-with-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>upload</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>input <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>outbuf_ptr</p></td>
+<td class="parameter_description"><p>resulting <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-upload-perform-with-buffer.returns"></a><h4>Returns</h4>
+<p> whether the upload was successful</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-upload-get-input-template-caps"></a><h3>gst_gl_upload_get_input_template_caps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+gst_gl_upload_get_input_template_caps (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLUpload.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLUpload-struct"></a><h3>GstGLUpload</h3>
+<pre class="programlisting">typedef struct _GstGLUpload GstGLUpload;</pre>
+<p>Opaque <a class="link" href="GstGLUpload.html" title="GstGLUpload"><span class="type">GstGLUpload</span></a> object</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLUploadReturn"></a><h3>enum GstGLUploadReturn</h3>
+<div class="refsect3">
+<a name="GstGLUploadReturn.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-UPLOAD-DONE:CAPS"></a>GST_GL_UPLOAD_DONE</p></td>
+<td class="enum_member_description">
+<p>No further processing required</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-UPLOAD-ERROR:CAPS"></a>GST_GL_UPLOAD_ERROR</p></td>
+<td class="enum_member_description">
+<p>An unspecified error occured</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-UPLOAD-UNSUPPORTED:CAPS"></a>GST_GL_UPLOAD_UNSUPPORTED</p></td>
+<td class="enum_member_description">
+<p>The configuration is unsupported.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-UPLOAD-RECONFIGURE:CAPS"></a>GST_GL_UPLOAD_RECONFIGURE</p></td>
+<td class="enum_member_description">
+<p>This element requires a reconfiguration.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLUpload.see-also"></a><h2>See Also</h2>
+<p><span class="type">GstGLDownload</span>, <a class="link" href="gst-plugins-base-libs-GstGLMemory.html#GstGLMemory" title="GstGLMemory"><span class="type">GstGLMemory</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>glshader: GStreamer Base Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-base Elements">
+<link rel="prev" href="gst-plugins-base-plugins-gloverlay.html" title="gloverlay">
+<link rel="next" href="gst-plugins-base-plugins-glsinkbin.html" title="glsinkbin">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glshader.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glshader.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glshader.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glshader.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-plugins-gloverlay.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-plugins-glsinkbin.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-plugins-glshader"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-plugins-glshader.top_of_page"></a>glshader</span></h2>
+<p>glshader</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader--fragment" title="The “fragment” property">fragment</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../html/GstGLShader.html#GstGLShader-struct"><span class="type">GstGLShader</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader--shader" title="The “shader” property">shader</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader--uniforms" title="The “uniforms” property">uniforms</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader--update-shader" title="The “update-shader” property">update-shader</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader--vertex" title="The “vertex” property">vertex</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type">
+<a href="../html/GstGLShader.html#GstGLShader-struct"><span class="returnvalue">GstGLShader</span></a>*</td>
+<td class="signal_name"><a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader-create-shader" title="The “create-shader” signal">create-shader</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="GstGLFilterShader"></a><div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader-struct" title="struct GstGLFilterShader">GstGLFilterShader</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+                    <span class="lineart">╰──</span> <a href="../html/GstGLBaseFilter.html#GstGLBaseFilter-struct">GstGLBaseFilter</a>
+                        <span class="lineart">╰──</span> <a href="../html/GstGLFilter.html#GstGLFilter-struct">GstGLFilter</a>
+                            <span class="lineart">╰──</span> GstGLFilterShader
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.description"></a><h2>Description</h2>
+<p>OpenGL fragment shader filter</p>
+<div class="refsect3">
+<a name="id-1.2.59.8.3"></a><h4>Examples</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> videotestsrc <span class="gtkdoc opt">!</span> glupload <span class="gtkdoc opt">!</span> glshader fragment<span class="gtkdoc opt">=</span><span class="string">&quot;</span><span class="gtkdoc esc">\&quot;</span><span class="string">`cat myshader.frag`</span><span class="gtkdoc esc">\&quot;</span><span class="string">&quot;</span> <span class="gtkdoc opt">!</span> glimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+FBO (Frame Buffer Object) and GLSL (OpenGL Shading Language) are required.
+Depending on the exact OpenGL version chosen and the exact requirements of
+the OpenGL implementation, a <span class="type">version</span> header may be required.</p>
+<p>The following is a simple OpenGL ES (also usable with OpenGL 3 core contexts)
+passthrough shader with the required inputs.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc ppc">#version 100</span>
+<span class="gtkdoc ppc">#ifdef GL_ES</span>
+precision mediump <span class="gtkdoc kwb">float</span><span class="gtkdoc opt">;</span>
+<span class="gtkdoc ppc">#endif</span>
+varying vec2 v_texcoord<span class="gtkdoc opt">;</span>
+uniform sampler2D tex<span class="gtkdoc opt">;</span>
+uniform <span class="gtkdoc kwb">float</span> time<span class="gtkdoc opt">;</span>
+uniform <span class="gtkdoc kwb">float</span> width<span class="gtkdoc opt">;</span>
+uniform <span class="gtkdoc kwb">float</span> height<span class="gtkdoc opt">;</span>
+
+<span class="gtkdoc kwb">void</span> <span class="function">main</span> <span class="gtkdoc opt">() {</span>
+  gl_FragColor <span class="gtkdoc opt">=</span> <span class="function">texture2D</span><span class="gtkdoc opt">(</span> tex<span class="gtkdoc opt">,</span> v_texcoord <span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.59.8.4.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-base-plugins-plugin-opengl.html#plugin-opengl">opengl</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>&lt;matthew@centricular.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Effect</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.59.8.4.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw(ANY), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], texture-target=(string)2D</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw(memory:GLMemory), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], texture-target=(string)2D</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw(memory:GLMemory), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], texture-target=(string)2D</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw(ANY), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], texture-target=(string)2D</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLFilterShader-struct"></a><h3>struct GstGLFilterShader</h3>
+<pre class="programlisting">struct GstGLFilterShader;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstGLFilterShader--fragment"></a><h3>The <code class="literal">“fragment”</code> property</h3>
+<pre class="programlisting">  “fragment”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>GLSL fragment source.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLFilterShader--shader"></a><h3>The <code class="literal">“shader”</code> property</h3>
+<pre class="programlisting">  “shader”                   <a href="../html/GstGLShader.html#GstGLShader-struct"><span class="type">GstGLShader</span></a> *</pre>
+<p>GstGLShader to use.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLFilterShader--uniforms"></a><h3>The <code class="literal">“uniforms”</code> property</h3>
+<pre class="programlisting">  “uniforms”                 <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</pre>
+<p>GLSL Uniforms.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLFilterShader--update-shader"></a><h3>The <code class="literal">“update-shader”</code> property</h3>
+<pre class="programlisting">  “update-shader”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Emit the 'create-shader' signal for the next frame.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLFilterShader--vertex"></a><h3>The <code class="literal">“vertex”</code> property</h3>
+<pre class="programlisting">  “vertex”                   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>GLSL vertex source.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glshader.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GstGLFilterShader-create-shader"></a><h3>The <code class="literal">“create-shader”</code> signal</h3>
+<pre class="programlisting"><a href="../html/GstGLShader.html#GstGLShader-struct"><span class="returnvalue">GstGLShader</span></a>*
+user_function (<a class="link" href="gst-plugins-base-plugins-glshader.html#GstGLFilterShader"><span class="type">GstGLFilterShader</span></a> *gstglfiltershader,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

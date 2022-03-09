@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstVideoAggregatorPad: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-video.html" title="Video Library">
+<link rel="prev" href="GstVideoAggregator.html" title="GstVideoAggregator">
+<link rel="next" href="gst-plugins-base-libs-GstVideoOverlayRectangle.html" title="GstVideoOverlayRectangle">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstVideoAggregatorPad.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstVideoAggregatorPad.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GstVideoAggregatorPad.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-video.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstVideoAggregator.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-libs-GstVideoOverlayRectangle.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstVideoAggregatorPad"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstVideoAggregatorPad.top_of_page"></a>GstVideoAggregatorPad</span></h2>
+<p>GstVideoAggregatorPad</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GstVideoAggregatorPad.html#GstVideoAggregatorPad--repeat-after-eos" title="The “repeat-after-eos” property">repeat-after-eos</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="GstVideoAggregatorPad.html#GstVideoAggregatorPad--zorder" title="The “zorder” property">zorder</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstVideoAggregatorPad.html#GstVideoAggregatorPad-struct" title="struct GstVideoAggregatorPad">GstVideoAggregatorPad</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstVideoAggregatorPad.html#GstVideoAggregatorPadClass" title="struct GstVideoAggregatorPadClass">GstVideoAggregatorPadClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPad-struct">GstPad</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstAggregatorPad.html#GstAggregatorPad-struct">GstAggregatorPad</a>
+                    <span class="lineart">╰──</span> GstVideoAggregatorPad
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/video/video.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstVideoAggregatorPad-struct"></a><h3>struct GstVideoAggregatorPad</h3>
+<pre class="programlisting">struct GstVideoAggregatorPad {
+  /* read-only, with OBJECT_LOCK */
+  GstVideoInfo                  info;
+};
+</pre>
+<div class="refsect3">
+<a name="GstVideoAggregatorPad.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoInfo" title="struct GstVideoInfo"><span class="type">GstVideoInfo</span></a> <em class="structfield"><code><a name="GstVideoAggregatorPad-struct.info"></a>info</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoInfo" title="struct GstVideoInfo"><span class="type">GstVideoInfo</span></a> currently set on the pad</p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVideoAggregatorPadClass"></a><h3>struct GstVideoAggregatorPadClass</h3>
+<pre class="programlisting">struct GstVideoAggregatorPadClass {
+  GstAggregatorPadClass parent_class;
+  void               (*update_conversion_info) (GstVideoAggregatorPad * pad);
+
+  gboolean           (*prepare_frame)          (GstVideoAggregatorPad * pad,
+                                                GstVideoAggregator    * videoaggregator,
+                                                GstBuffer             * buffer,
+                                                GstVideoFrame         * prepared_frame);
+
+  void               (*clean_frame)            (GstVideoAggregatorPad * pad,
+                                                GstVideoAggregator    * videoaggregator,
+                                                GstVideoFrame         * prepared_frame);
+
+  gpointer          _gst_reserved[GST_PADDING_LARGE];
+};
+</pre>
+<div class="refsect3">
+<a name="GstVideoAggregatorPadClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstVideoAggregatorPadClass.update-conversion-info"></a>update_conversion_info</code></em> ()</p></td>
+<td class="struct_member_description"><p>Called when either the input or output formats
+have changed.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstVideoAggregatorPadClass.prepare-frame"></a>prepare_frame</code></em> ()</p></td>
+<td class="struct_member_description"><p>Prepare the frame from the pad buffer and sets it to prepared_frame</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GstVideoAggregatorPadClass.clean-frame"></a>clean_frame</code></em> ()</p></td>
+<td class="struct_member_description"><p>clean the frame previously prepared in prepare_frame</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> <em class="structfield"><code><a name="GstVideoAggregatorPadClass.-gst-reserved"></a>_gst_reserved</code></em>[GST_PADDING_LARGE];</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.16">1.16</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstVideoAggregatorPad.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstVideoAggregatorPad--repeat-after-eos"></a><h3>The <code class="literal">“repeat-after-eos”</code> property</h3>
+<pre class="programlisting">  “repeat-after-eos”         <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Repeat the last frame after EOS until all pads are EOS.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVideoAggregatorPad--zorder"></a><h3>The <code class="literal">“zorder”</code> property</h3>
+<pre class="programlisting">  “zorder”                   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Z Order of the picture.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

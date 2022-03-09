@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="commonutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lensparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ndieleminit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nditransform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooldataclient.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltracker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trackbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trackoverlay.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tracksrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commonutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lensparam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nditransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tooldataclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trackbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trackoverlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tracksrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{39f4e26a-92b7-4420-be89-bb83173d22e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8c5849ae-ae38-46e5-82d2-f1b5b9085130}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

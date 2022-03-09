@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs/gst/fft/.libs
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs
+girdir=/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs/gst/fft
+typelibdir=/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs/gst/fft
+
+Name: GStreamer FFT Library, Uninstalled
+Description: FFT implementation, uninstalled
+Version: 1.16.1
+Requires: gstreamer-1.0
+Libs: -L${libdir} -lgstfft-1.0 -lm
+Cflags: -I/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs -I/home/zyl/ubuntu_HDD/NDI/gst-plugins-base-1.16.1/gst-libs
+

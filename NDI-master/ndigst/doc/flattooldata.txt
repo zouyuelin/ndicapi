@@ -1,0 +1,78 @@
+// IDL file for tool track marker data schema.
+
+namespace NDI.FlatToolData;
+
+enum MarkerStatus:ubyte { OK = 0, Missing = 0x01, OutOfVolume = 0x05, PossiblePhantom = 0x06, Saturated = 0x07, SaturatedOutOfVolume = 0x08 }
+
+struct Marker {
+  status:MarkerStatus;
+  index:uint16;
+  x:double;
+  y:double;
+  z:double;
+}
+
+enum ConditionType:byte { Fault = 0, Alert = 0x01, Event = 0x02 }
+enum FaultType:ushort { Ok = 0x0000,
+						FatalParameter = 0x0001,
+						SensorParameter = 0x0002,
+						MainVoltage = 0x0003,
+						SensorVoltage = 0x0004,
+						IlluminatorCurrent = 0x0005,
+						IlluminatorVoltage = 0x0006,
+						Sensor0Temp = 0x0007, // left temperature sensor
+						Sensor1Temp = 0x0008, // right temperature sensor
+						MainTemp = 0x0009,
+						SensorMalfunction = 0x000a }
+
+struct SystemAlert {
+  conditionType:ubyte;
+  conditionCode:uint16;
+}
+
+// stored in lower 8 bits of status variable
+enum TransformStatus:ushort {Enabled = 0x00,
+							PartiallyOutOfVolume = 0x03,
+							OutOfVolume = 0x09,
+							TooFewMarkers = 0x0D,
+							Inteference = 0x0E,
+							BadTransformFit = 0x11,
+							DataBufferLimit = 0x12,
+							AlgorithmLimit = 0x13,
+							FellBehind = 0x14,
+							OutOfSynch = 0x15,
+							ProcessingError = 0x16,
+							ToolMissing = 0x1F,
+							TrackingNotEnabled = 0x20,
+							ToolUnplugged = 0x21 }
+
+struct Transform
+{	
+	toolHandle:uint16;
+	status:uint16;
+	q0:double;
+	qx:double;
+	qy:double;
+	qz:double;
+	tx:double;
+	ty:double;
+	tz:double;
+	error:double;
+}
+
+table ToolData {
+	framenumber:uint;
+	transform:Transform;
+	//! The "seconds" part of the timestamp
+	timespec_s:uint32;
+	//! The "nanoseconds" part of the timestamp
+	timespec_ns:uint32;
+	markers:[Marker];
+	alerts:[SystemAlert];
+}
+
+table ToolDataWrapper {
+	tooldatas:[ToolData];
+}
+
+root_type ToolDataWrapper;

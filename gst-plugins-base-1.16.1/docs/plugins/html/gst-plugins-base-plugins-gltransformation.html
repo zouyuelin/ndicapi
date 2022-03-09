@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gltransformation: GStreamer Base Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-base Elements">
+<link rel="prev" href="gst-plugins-base-plugins-gltestsrc.html" title="gltestsrc">
+<link rel="next" href="gst-plugins-base-plugins-glupload.html" title="glupload">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-gltransformation.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-plugins-gltestsrc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-plugins-glupload.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-plugins-gltransformation"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-plugins-gltransformation.top_of_page"></a>gltransformation</span></h2>
+<p>gltransformation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltransformation.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-plugins-gltransformation.html#GstGLTransformation" title="struct GstGLTransformation">GstGLTransformation</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltransformation.description"></a><h2>Description</h2>
+<p>Transforms video on the GPU.</p>
+<div class="refsect3">
+<a name="id-1.2.65.4.3"></a><h4>Examples</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> gltestsrc <span class="gtkdoc opt">!</span> gltransformation rotation<span class="gtkdoc opt">-</span>z<span class="gtkdoc opt">=</span><span class="number">45</span> <span class="gtkdoc opt">!</span> glimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> A pipeline to rotate by 45 degrees</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> gltestsrc <span class="gtkdoc opt">!</span> gltransformation translation<span class="gtkdoc opt">-</span>x<span class="gtkdoc opt">=</span><span class="number">0.5</span> <span class="gtkdoc opt">!</span> glimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Translate the video by 0.5</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> gltestsrc <span class="gtkdoc opt">!</span> gltransformation scale<span class="gtkdoc opt">-</span>y<span class="gtkdoc opt">=</span><span class="number">0.5</span> scale<span class="gtkdoc opt">-</span>x<span class="gtkdoc opt">=</span><span class="number">0.5</span> <span class="gtkdoc opt">!</span> glimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Resize the video by 0.5</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> gltestsrc <span class="gtkdoc opt">!</span> gltransformation rotation<span class="gtkdoc opt">-</span>x<span class="gtkdoc opt">=-</span><span class="number">45</span> ortho<span class="gtkdoc opt">=</span>True <span class="gtkdoc opt">!</span> glimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Rotate the video around the X-Axis by -45° with an orthographic projection</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltransformation.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltransformation.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLTransformation"></a><h3>struct GstGLTransformation</h3>
+<pre class="programlisting">struct GstGLTransformation {
+    GstGLFilter filter;
+
+    GstGLShader *shader;
+    GLuint       vao;
+    GLuint       vbo_indices;
+    GLuint       vertex_buffer;
+    GLint        attr_position;
+    GLint        attr_texture;
+
+    GstGLMemory *in_tex;
+    GstGLMemory *out_tex;
+
+    gfloat xrotation;
+    gfloat yrotation;
+    gfloat zrotation;
+
+    gfloat xscale;
+    gfloat yscale;
+
+    gfloat xtranslation;
+    gfloat ytranslation;
+    gfloat ztranslation;
+
+    gfloat xpivot;
+    gfloat ypivot;
+    gfloat zpivot;
+
+    /* perspective */
+    gfloat fov;
+    gfloat aspect;
+    gfloat znear;
+    gfloat zfar;
+    gboolean ortho;
+
+    graphene_matrix_t model_matrix;
+    graphene_matrix_t view_matrix;
+    graphene_matrix_t projection_matrix;
+    graphene_matrix_t inv_model_matrix;
+    graphene_matrix_t inv_view_matrix;
+    graphene_matrix_t inv_projection_matrix;
+    graphene_matrix_t mvp_matrix;
+
+    graphene_vec3_t camera_position;
+
+    gboolean downstream_supports_affine_meta;
+    gboolean caps_change;
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

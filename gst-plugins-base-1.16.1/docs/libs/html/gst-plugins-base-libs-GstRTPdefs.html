@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstRTPdefs: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-rtp.html" title="RTP Library">
+<link rel="prev" href="gst-plugins-base-libs-GstRtphdrext.html" title="GstRtphdrext">
+<link rel="next" href="gstreamer-rtsp.html" title="RTSP Library">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-libs-GstRTPdefs.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-rtp.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-GstRtphdrext.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gstreamer-rtsp.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-libs-GstRTPdefs"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-libs-GstRTPdefs.top_of_page"></a>GstRTPdefs</span></h2>
+<p>GstRTPdefs — common RTP defines</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstRTPdefs.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstRTPdefs.html#GstRTPProfile" title="enum GstRTPProfile">GstRTPProfile</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstRTPdefs.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/rtp/rtp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstRTPdefs.description"></a><h2>Description</h2>
+<p>Provides common defines for the RTP library.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstRTPdefs.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstRTPdefs.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstRTPProfile"></a><h3>enum GstRTPProfile</h3>
+<p>The transfer profile to use.</p>
+<div class="refsect3">
+<a name="GstRTPProfile.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-RTP-PROFILE-UNKNOWN:CAPS"></a>GST_RTP_PROFILE_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>invalid profile</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-RTP-PROFILE-AVP:CAPS"></a>GST_RTP_PROFILE_AVP</p></td>
+<td class="enum_member_description">
+<p>the Audio/Visual profile (RFC 3551)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-RTP-PROFILE-SAVP:CAPS"></a>GST_RTP_PROFILE_SAVP</p></td>
+<td class="enum_member_description">
+<p>the secure Audio/Visual profile (RFC 3711)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-RTP-PROFILE-AVPF:CAPS"></a>GST_RTP_PROFILE_AVPF</p></td>
+<td class="enum_member_description">
+<p>the Audio/Visual profile with feedback (RFC 4585)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-RTP-PROFILE-SAVPF:CAPS"></a>GST_RTP_PROFILE_SAVPF</p></td>
+<td class="enum_member_description">
+<p>the secure Audio/Visual profile with feedback (RFC 5124)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

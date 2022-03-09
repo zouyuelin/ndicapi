@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstGLViewConvert: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gl.html" title="OpenGL Integration Library">
+<link rel="prev" href="GstGLUpload.html" title="GstGLUpload">
+<link rel="next" href="GstGLWindow.html" title="GstGLWindow">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstGLViewConvert.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstGLViewConvert.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GstGLViewConvert.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gl.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstGLUpload.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GstGLWindow.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstGLViewConvert"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstGLViewConvert.top_of_page"></a>GstGLViewConvert</span></h2>
+<p>GstGLViewConvert — convert between steroscopic/multiview video formats</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstGLViewConvert.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="returnvalue">GstGLViewConvert</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-new" title="gst_gl_view_convert_new ()">gst_gl_view_convert_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-set-caps" title="gst_gl_view_convert_set_caps ()">gst_gl_view_convert_set_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-transform-caps" title="gst_gl_view_convert_transform_caps ()">gst_gl_view_convert_transform_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-fixate-caps" title="gst_gl_view_convert_fixate_caps ()">gst_gl_view_convert_fixate_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstFlowReturn"><span class="returnvalue">GstFlowReturn</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-submit-input-buffer" title="gst_gl_view_convert_submit_input_buffer ()">gst_gl_view_convert_submit_input_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstFlowReturn"><span class="returnvalue">GstFlowReturn</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-get-output" title="gst_gl_view_convert_get_output ()">gst_gl_view_convert_get_output</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="returnvalue">GstBuffer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-perform" title="gst_gl_view_convert_perform ()">gst_gl_view_convert_perform</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-reset" title="gst_gl_view_convert_reset ()">gst_gl_view_convert_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-set-context" title="gst_gl_view_convert_set_context ()">gst_gl_view_convert_set_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a class="link" href="GstGLViewConvert.html#GstGLStereoDownmix" title="enum GstGLStereoDownmix"><span class="type">GstGLStereoDownmix</span></a></td>
+<td class="property_name"><a class="link" href="GstGLViewConvert.html#GstGLViewConvert--downmix-mode" title="The “downmix-mode” property">downmix-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewFlags" title="enum GstVideoMultiviewFlags"><span class="type">GstVideoMultiviewFlags</span></a></td>
+<td class="property_name"><a class="link" href="GstGLViewConvert.html#GstGLViewConvert--input-flags-override" title="The “input-flags-override” property">input-flags-override</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewMode" title="enum GstVideoMultiviewMode"><span class="type">GstVideoMultiviewMode</span></a></td>
+<td class="property_name"><a class="link" href="GstGLViewConvert.html#GstGLViewConvert--input-mode-override" title="The “input-mode-override” property">input-mode-override</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewFlags" title="enum GstVideoMultiviewFlags"><span class="type">GstVideoMultiviewFlags</span></a></td>
+<td class="property_name"><a class="link" href="GstGLViewConvert.html#GstGLViewConvert--output-flags-override" title="The “output-flags-override” property">output-flags-override</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewMode" title="enum GstVideoMultiviewMode"><span class="type">GstVideoMultiviewMode</span></a></td>
+<td class="property_name"><a class="link" href="GstGLViewConvert.html#GstGLViewConvert--output-mode-override" title="The “output-mode-override” property">output-mode-override</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GstGLViewConvert.html#GstGLStereoDownmix" title="enum GstGLStereoDownmix">GstGLStereoDownmix</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstGLViewConvert.html#GstGLViewConvert-struct" title="GstGLViewConvert">GstGLViewConvert</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstGLViewConvert.html#GstGLViewConvertClass" title="GstGLViewConvertClass">GstGLViewConvertClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> GstGLStereoDownmix
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> GstGLViewConvert
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/gl/gl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.description"></a><h2>Description</h2>
+<p>Convert stereoscopic/multiview video using fragment shaders.</p>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-gl-view-convert-new"></a><h3>gst_gl_view_convert_new ()</h3>
+<pre class="programlisting"><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="returnvalue">GstGLViewConvert</span></a> *
+gst_gl_view_convert_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="gst-gl-view-convert-new.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-set-caps"></a><h3>gst_gl_view_convert_set_caps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_gl_view_convert_set_caps (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *in_caps</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *out_caps</code></em>);</pre>
+<p>Initializes <em class="parameter"><code>viewconvert</code></em>
+ with the information required for conversion.</p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-set-caps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_caps</p></td>
+<td class="parameter_description"><p>input <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_caps</p></td>
+<td class="parameter_description"><p>output <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-transform-caps"></a><h3>gst_gl_view_convert_transform_caps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+gst_gl_view_convert_transform_caps (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPadDirection"><span class="type">GstPadDirection</span></a> direction</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *caps</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *filter</code></em>);</pre>
+<p>Provides an implementation of <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransformClass.transform-caps"><code class="function">GstBaseTransformClass.transform_caps()</code></a></p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-transform-caps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPadDirection"><span class="type">GstPadDirection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>caps</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> to transform. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filter</p></td>
+<td class="parameter_description"><p>a set of filter <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-view-convert-transform-caps.returns"></a><h4>Returns</h4>
+<p>the converted <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-fixate-caps"></a><h3>gst_gl_view_convert_fixate_caps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+gst_gl_view_convert_fixate_caps (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPadDirection"><span class="type">GstPadDirection</span></a> direction</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *caps</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> *othercaps</code></em>);</pre>
+<p>Provides an implementation of <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransformClass.fixate-caps"><code class="function">GstBaseTransformClass.fixate_caps()</code></a></p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-fixate-caps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPadDirection"><span class="type">GstPadDirection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>caps</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> of <em class="parameter"><code>direction</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>othercaps</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> to fixate. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-view-convert-fixate-caps.returns"></a><h4>Returns</h4>
+<p>the fixated <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-submit-input-buffer"></a><h3>gst_gl_view_convert_submit_input_buffer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstFlowReturn"><span class="returnvalue">GstFlowReturn</span></a>
+gst_gl_view_convert_submit_input_buffer
+                               (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> is_discont</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *input</code></em>);</pre>
+<p>Submit <em class="parameter"><code>input</code></em>
+ to be processed by <em class="parameter"><code>viewconvert</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-submit-input-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>is_discont</p></td>
+<td class="parameter_description"><p>true if we have a discontinuity</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>input</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-view-convert-submit-input-buffer.returns"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstFlowReturn"><span class="type">GstFlowReturn</span></a></p>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-get-output"></a><h3>gst_gl_view_convert_get_output ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstFlowReturn"><span class="returnvalue">GstFlowReturn</span></a>
+gst_gl_view_convert_get_output (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> **outbuf_ptr</code></em>);</pre>
+<p>Retrieve the processed output buffer placing the output in <em class="parameter"><code>outbuf_ptr</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-get-output.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>outbuf_ptr</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-view-convert-get-output.returns"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstFlowReturn"><span class="type">GstFlowReturn</span></a></p>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-perform"></a><h3>gst_gl_view_convert_perform ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="returnvalue">GstBuffer</span></a> *
+gst_gl_view_convert_perform (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *inbuf</code></em>);</pre>
+<p>Converts the data contained by <em class="parameter"><code>inbuf</code></em>
+ using the formats specified by the
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> passed to <a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-set-caps" title="gst_gl_view_convert_set_caps ()"><code class="function">gst_gl_view_convert_set_caps()</code></a></p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-perform.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>inbuf</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-libs-GstGLMemory.html#GstGLMemory" title="GstGLMemory"><span class="type">GstGLMemory</span></a> filled <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> to convert. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-gl-view-convert-perform.returns"></a><h4>Returns</h4>
+<p>a converted <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-reset"></a><h3>gst_gl_view_convert_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_view_convert_reset (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>);</pre>
+<p>Reset <em class="parameter"><code>viewconvert</code></em>
+ to the default state.  Further operation will require
+setting the caps with <a class="link" href="GstGLViewConvert.html#gst-gl-view-convert-set-caps" title="gst_gl_view_convert_set_caps ()"><code class="function">gst_gl_view_convert_set_caps()</code></a>.</p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-reset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-gl-view-convert-set-context"></a><h3>gst_gl_view_convert_set_context ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_gl_view_convert_set_context (<em class="parameter"><code><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> *viewconvert</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> *context</code></em>);</pre>
+<p>Set <em class="parameter"><code>context</code></em>
+ on <em class="parameter"><code>viewconvert</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-gl-view-convert-set-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>viewconvert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a> to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix10.html#api-index-1.6">1.6</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLStereoDownmix"></a><h3>enum GstGLStereoDownmix</h3>
+<p>Output anaglyph type to generate when downmixing to mono</p>
+<div class="refsect3">
+<a name="GstGLStereoDownmix.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-STEREO-DOWNMIX-ANAGLYPH-GREEN-MAGENTA-DUBOIS:CAPS"></a>GST_GL_STEREO_DOWNMIX_ANAGLYPH_GREEN_MAGENTA_DUBOIS</p></td>
+<td class="enum_member_description">
+<p>Dubois optimised Green-Magenta anaglyph</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-STEREO-DOWNMIX-ANAGLYPH-RED-CYAN-DUBOIS:CAPS"></a>GST_GL_STEREO_DOWNMIX_ANAGLYPH_RED_CYAN_DUBOIS</p></td>
+<td class="enum_member_description">
+<p>Dubois optimised Red-Cyan anaglyph</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-STEREO-DOWNMIX-ANAGLYPH-AMBER-BLUE-DUBOIS:CAPS"></a>GST_GL_STEREO_DOWNMIX_ANAGLYPH_AMBER_BLUE_DUBOIS</p></td>
+<td class="enum_member_description">
+<p>Dubois optimised Amber-Blue anaglyph</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLViewConvert-struct"></a><h3>GstGLViewConvert</h3>
+<pre class="programlisting">typedef struct _GstGLViewConvert GstGLViewConvert;</pre>
+<p><a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert"><span class="type">GstGLViewConvert</span></a> is an opaque struct and should only be accessed through the
+provided api.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLViewConvertClass"></a><h3>GstGLViewConvertClass</h3>
+<pre class="programlisting">typedef struct {
+} GstGLViewConvertClass;
+</pre>
+<p>Opaque <a class="link" href="GstGLViewConvert.html#GstGLViewConvertClass" title="GstGLViewConvertClass"><span class="type">GstGLViewConvertClass</span></a> struct</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstGLViewConvert--downmix-mode"></a><h3>The <code class="literal">“downmix-mode”</code> property</h3>
+<pre class="programlisting">  “downmix-mode”             <a class="link" href="GstGLViewConvert.html#GstGLStereoDownmix" title="enum GstGLStereoDownmix"><span class="type">GstGLStereoDownmix</span></a></pre>
+<p>Output anaglyph type to generate when downmixing to mono.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_GL_STEREO_DOWNMIX_ANAGLYPH_GREEN_MAGENTA_DUBOIS</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLViewConvert--input-flags-override"></a><h3>The <code class="literal">“input-flags-override”</code> property</h3>
+<pre class="programlisting">  “input-flags-override”     <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewFlags" title="enum GstVideoMultiviewFlags"><span class="type">GstVideoMultiviewFlags</span></a></pre>
+<p>Override any input information about multiview layout flags.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLViewConvert--input-mode-override"></a><h3>The <code class="literal">“input-mode-override”</code> property</h3>
+<pre class="programlisting">  “input-mode-override”      <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewMode" title="enum GstVideoMultiviewMode"><span class="type">GstVideoMultiviewMode</span></a></pre>
+<p>Override any input information about multiview layout.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_VIDEO_MULTIVIEW_MODE_NONE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLViewConvert--output-flags-override"></a><h3>The <code class="literal">“output-flags-override”</code> property</h3>
+<pre class="programlisting">  “output-flags-override”    <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewFlags" title="enum GstVideoMultiviewFlags"><span class="type">GstVideoMultiviewFlags</span></a></pre>
+<p>Override automatic negotiation for output multiview layout flags.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLViewConvert--output-mode-override"></a><h3>The <code class="literal">“output-mode-override”</code> property</h3>
+<pre class="programlisting">  “output-mode-override”     <a class="link" href="gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewMode" title="enum GstVideoMultiviewMode"><span class="type">GstVideoMultiviewMode</span></a></pre>
+<p>Override automatic output mode selection for multiview layout.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_VIDEO_MULTIVIEW_MODE_NONE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstGLViewConvert.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GstGLColorConvert.html" title="GstGLColorConvert"><span class="type">GstGLColorConvert</span></a>, <a class="link" href="GstGLContext.html" title="GstGLContext"><span class="type">GstGLContext</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

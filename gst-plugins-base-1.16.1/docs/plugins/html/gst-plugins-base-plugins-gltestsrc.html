@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gltestsrc: GStreamer Base Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-base Elements">
+<link rel="prev" href="gst-plugins-base-plugins-glstereosplit.html" title="glstereosplit">
+<link rel="next" href="gst-plugins-base-plugins-gltransformation.html" title="gltransformation">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-gltestsrc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-gltestsrc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-gltestsrc.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-plugins-glstereosplit.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-plugins-gltransformation.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-plugins-gltestsrc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-plugins-gltestsrc.top_of_page"></a>gltestsrc</span></h2>
+<p>gltestsrc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltestsrc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-gltestsrc.html#GstGLTestSrc--is-live" title="The “is-live” property">is-live</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="gst-plugins-base-plugins-gltestsrc.html#GstGLTestSrcPattern" title="enum GstGLTestSrcPattern"><span class="type">GstGLTestSrcPattern</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-gltestsrc.html#GstGLTestSrc--pattern" title="The “pattern” property">pattern</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-gltestsrc.html#GstGLTestSrc--timestamp-offset" title="The “timestamp-offset” property">timestamp-offset</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstGLTestSrc"></a><div class="refsect1">
+<a name="gst-plugins-base-plugins-gltestsrc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gst-plugins-base-plugins-gltestsrc.html#GstGLTestSrc-struct" title="GstGLTestSrc">GstGLTestSrc</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-plugins-gltestsrc.html#GstGLTestSrcPattern" title="enum GstGLTestSrcPattern">GstGLTestSrcPattern</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltestsrc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseSrc.html#GstBaseSrc-struct">GstBaseSrc</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstPushSrc.html#GstPushSrc-struct">GstPushSrc</a>
+                        <span class="lineart">╰──</span> GstGLTestSrc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltestsrc.description"></a><h2>Description</h2>
+<p>The gltestsrc element is used to produce test video texture.
+The video test produced can be controlled with the "pattern"
+property.</p>
+<div class="refsect3">
+<a name="id-1.2.64.7.3"></a><h4>Example launch line</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v gltestsrc pattern<span class="gtkdoc opt">=</span>smpte <span class="gtkdoc opt">!</span> glimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+Shows original SMPTE color bars in a window.</p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.64.7.4.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-base-plugins-plugin-opengl.html#plugin-opengl">opengl</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>David A. Schleef &lt;ds@schleef.org&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Source/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.64.7.4.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw(memory:GLMemory), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], texture-target=(string)2D</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltestsrc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltestsrc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLTestSrc-struct"></a><h3>GstGLTestSrc</h3>
+<pre class="programlisting">typedef struct _GstGLTestSrc GstGLTestSrc;</pre>
+<p>Opaque data structure.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLTestSrcPattern"></a><h3>enum GstGLTestSrcPattern</h3>
+<p>The test pattern to produce.</p>
+<div class="refsect3">
+<a name="GstGLTestSrcPattern.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-SMPTE:CAPS"></a>GST_GL_TEST_SRC_SMPTE</p></td>
+<td class="enum_member_description">
+<p>A standard SMPTE test pattern</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-SNOW:CAPS"></a>GST_GL_TEST_SRC_SNOW</p></td>
+<td class="enum_member_description">
+<p>Random noise</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-BLACK:CAPS"></a>GST_GL_TEST_SRC_BLACK</p></td>
+<td class="enum_member_description">
+<p>A black image</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-WHITE:CAPS"></a>GST_GL_TEST_SRC_WHITE</p></td>
+<td class="enum_member_description">
+<p>A white image</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-RED:CAPS"></a>GST_GL_TEST_SRC_RED</p></td>
+<td class="enum_member_description">
+<p>A red image</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-GREEN:CAPS"></a>GST_GL_TEST_SRC_GREEN</p></td>
+<td class="enum_member_description">
+<p>A green image</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-BLUE:CAPS"></a>GST_GL_TEST_SRC_BLUE</p></td>
+<td class="enum_member_description">
+<p>A blue image</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-CHECKERS1:CAPS"></a>GST_GL_TEST_SRC_CHECKERS1</p></td>
+<td class="enum_member_description">
+<p>Checkers pattern (1px)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-CHECKERS2:CAPS"></a>GST_GL_TEST_SRC_CHECKERS2</p></td>
+<td class="enum_member_description">
+<p>Checkers pattern (2px)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-CHECKERS4:CAPS"></a>GST_GL_TEST_SRC_CHECKERS4</p></td>
+<td class="enum_member_description">
+<p>Checkers pattern (4px)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-CHECKERS8:CAPS"></a>GST_GL_TEST_SRC_CHECKERS8</p></td>
+<td class="enum_member_description">
+<p>Checkers pattern (8px)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-CIRCULAR:CAPS"></a>GST_GL_TEST_SRC_CIRCULAR</p></td>
+<td class="enum_member_description">
+<p>Circular pattern</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-BLINK:CAPS"></a>GST_GL_TEST_SRC_BLINK</p></td>
+<td class="enum_member_description">
+<p>Alternate between black and white</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-GL-TEST-SRC-MANDELBROT:CAPS"></a>GST_GL_TEST_SRC_MANDELBROT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-gltestsrc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstGLTestSrc--is-live"></a><h3>The <code class="literal">“is-live”</code> property</h3>
+<pre class="programlisting">  “is-live”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether to act as a live source.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLTestSrc--pattern"></a><h3>The <code class="literal">“pattern”</code> property</h3>
+<pre class="programlisting">  “pattern”                  <a class="link" href="gst-plugins-base-plugins-gltestsrc.html#GstGLTestSrcPattern" title="enum GstGLTestSrcPattern"><span class="type">GstGLTestSrcPattern</span></a></pre>
+<p>Type of test pattern to generate.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: SMPTE 100% color bars</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLTestSrc--timestamp-offset"></a><h3>The <code class="literal">“timestamp-offset”</code> property</h3>
+<pre class="programlisting">  “timestamp-offset”         <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>An offset added to timestamps set on buffers (in ns).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

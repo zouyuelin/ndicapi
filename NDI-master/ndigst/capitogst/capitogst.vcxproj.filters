@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\flatbuffer">
+      <UniqueIdentifier>{00163b48-7c46-4b72-bc54-5f1dfa9d55ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flatbuffer">
+      <UniqueIdentifier>{f972bd06-e0f9-4f82-b119-7324f5f3d090}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tooltracking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltrackinginterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nditransformbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flatbuffer\fbheaders\flatbuffers_common_builder.h">
+      <Filter>Header Files\flatbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="flatbuffer\fbheaders\flatbuffers_common_reader.h">
+      <Filter>Header Files\flatbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="flatbuffer\fbheaders\flattooldata_builder.h">
+      <Filter>Header Files\flatbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="flatbuffer\fbheaders\flattooldata_reader.h">
+      <Filter>Header Files\flatbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="flatbuffer\fbheaders\flattooldata_verifier.h">
+      <Filter>Header Files\flatbuffer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tooltracking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltrackinginterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="flatbuffer\flattooldata.fbs">
+      <Filter>Source Files\flatbuffer</Filter>
+    </None>
+  </ItemGroup>
+</Project>

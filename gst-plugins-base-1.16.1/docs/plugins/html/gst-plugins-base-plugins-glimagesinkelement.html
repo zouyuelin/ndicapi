@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>glimagesinkelement: GStreamer Base Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-base Elements">
+<link rel="prev" href="gst-plugins-base-plugins-glfilterglass.html" title="glfilterglass">
+<link rel="next" href="gst-plugins-base-plugins-glimagesink.html" title="glimagesink">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glimagesinkelement.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glimagesinkelement.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glimagesinkelement.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glimagesinkelement.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-plugins-glimagesinkelement.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-plugins-glfilterglass.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-plugins-glimagesink.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-plugins-glimagesinkelement"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-plugins-glimagesinkelement.top_of_page"></a>glimagesinkelement</span></h2>
+<p>glimagesinkelement</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="../html/GstGLContext.html#GstGLContext-struct"><span class="type">GstGLContext</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--context" title="The “context” property">context</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--force-aspect-ratio" title="The “force-aspect-ratio” property">force-aspect-ratio</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--handle-events" title="The “handle-events” property">handle-events</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--ignore-alpha" title="The “ignore-alpha” property">ignore-alpha</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../html/GstGLViewConvert.html#GstGLStereoDownmix"><span class="type">GstGLStereoDownmix</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--output-multiview-downmix-mode" title="The “output-multiview-downmix-mode” property">output-multiview-downmix-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../html/gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewFlags"><span class="type">GstVideoMultiviewFlags</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--output-multiview-flags" title="The “output-multiview-flags” property">output-multiview-flags</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../html/gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewMode"><span class="type">GstVideoMultiviewMode</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--output-multiview-mode" title="The “output-multiview-mode” property">output-multiview-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstFraction</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--pixel-aspect-ratio" title="The “pixel-aspect-ratio” property">pixel-aspect-ratio</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstGLRotateMethod</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--rotate-method" title="The “rotate-method” property">rotate-method</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstControlSource.html#GstValueArray"><span class="type">GstValueArray</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink--render-rectangle" title="The “render-rectangle” property">render-rectangle</a></td>
+<td class="property_flags">Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink-client-draw" title="The “client-draw” signal">client-draw</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink-client-reshape" title="The “client-reshape” signal">client-reshape</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstGLImageSink"></a><div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink-struct" title="struct GstGLImageSink">GstGLImageSink</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseSink.html#GstBaseSink-struct">GstBaseSink</a>
+                    <span class="lineart">╰──</span> <a href="../html/GstVideoSink.html#GstVideoSink-struct">GstVideoSink</a>
+                        <span class="lineart">╰──</span> GstGLImageSink
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstGLImageSink implements
+ <a href="../html/GstVideoOverlay.html#GstVideoOverlay-struct">GstVideoOverlay</a> and  <a href="../html/GstNavigation.html#GstNavigation-struct">GstNavigation</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.description"></a><h2>Description</h2>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.54.9.2.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-base-plugins-plugin-opengl.html#plugin-opengl">opengl</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Julien Isorce &lt;julien.isorce@gmail.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Sink/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.54.9.2.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw(memory:GLMemory), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], texture-target=(string){ 2D, external-oes }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw(memory:GLMemory, meta:GstVideoOverlayComposition), format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], texture-target=(string){ 2D, external-oes }</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGLImageSink-struct"></a><h3>struct GstGLImageSink</h3>
+<pre class="programlisting">struct GstGLImageSink;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstGLImageSink--context"></a><h3>The <code class="literal">“context”</code> property</h3>
+<pre class="programlisting">  “context”                  <a href="../html/GstGLContext.html#GstGLContext-struct"><span class="type">GstGLContext</span></a> *</pre>
+<p>Get OpenGL context.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--force-aspect-ratio"></a><h3>The <code class="literal">“force-aspect-ratio”</code> property</h3>
+<pre class="programlisting">  “force-aspect-ratio”       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>When enabled, scaling will respect original aspect ratio.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--handle-events"></a><h3>The <code class="literal">“handle-events”</code> property</h3>
+<pre class="programlisting">  “handle-events”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>When enabled, XEvents will be selected and handled.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--ignore-alpha"></a><h3>The <code class="literal">“ignore-alpha”</code> property</h3>
+<pre class="programlisting">  “ignore-alpha”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>When enabled, alpha will be ignored and converted to black.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--output-multiview-downmix-mode"></a><h3>The <code class="literal">“output-multiview-downmix-mode”</code> property</h3>
+<pre class="programlisting">  “output-multiview-downmix-mode” <a href="../html/GstGLViewConvert.html#GstGLStereoDownmix"><span class="type">GstGLStereoDownmix</span></a></pre>
+<p>Output anaglyph type to generate when downmixing to mono.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_GL_STEREO_DOWNMIX_ANAGLYPH_GREEN_MAGENTA_DUBOIS</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--output-multiview-flags"></a><h3>The <code class="literal">“output-multiview-flags”</code> property</h3>
+<pre class="programlisting">  “output-multiview-flags”   <a href="../html/gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewFlags"><span class="type">GstVideoMultiviewFlags</span></a></pre>
+<p>Output multiview layout modifier flags.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--output-multiview-mode"></a><h3>The <code class="literal">“output-multiview-mode”</code> property</h3>
+<pre class="programlisting">  “output-multiview-mode”    <a href="../html/gst-plugins-base-libs-GstVideo.html#GstVideoMultiviewMode"><span class="type">GstVideoMultiviewMode</span></a></pre>
+<p>Choose output mode for multiview/3D video.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_VIDEO_MULTIVIEW_MODE_MONO</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--pixel-aspect-ratio"></a><h3>The <code class="literal">“pixel-aspect-ratio”</code> property</h3>
+<pre class="programlisting">  “pixel-aspect-ratio”       <span class="type">GstFraction</span></pre>
+<p>The pixel aspect ratio of the device.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--rotate-method"></a><h3>The <code class="literal">“rotate-method”</code> property</h3>
+<pre class="programlisting">  “rotate-method”            <span class="type">GstGLRotateMethod</span></pre>
+<p>rotate method.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Identity (no rotation)</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink--render-rectangle"></a><h3>The <code class="literal">“render-rectangle”</code> property</h3>
+<pre class="programlisting">  “render-rectangle”         <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstControlSource.html#GstValueArray"><span class="type">GstValueArray</span></a></pre>
+<p>The render rectangle ('&lt;x, y, width, height&gt;').</p>
+<p>Flags: Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-plugins-glimagesinkelement.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GstGLImageSink-client-draw"></a><h3>The <code class="literal">“client-draw”</code> signal</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink"><span class="type">GstGLImageSink</span></a> *object,
+               <a href="../html/GstGLContext.html#GstGLContext-struct"><span class="type">GstGLContext</span></a>   *texture,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstSample.html#GstSample-struct"><span class="type">GstSample</span></a>      *width,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Will be emitted before actually drawing the texture.  The client should
+redraw the surface/contents with the <em class="parameter"><code>texture</code></em>
+, <em class="parameter"><code>width</code></em>
+ and <em class="parameter"><code>height</code></em>
+ and
+and return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="GstGLImageSink-client-draw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink"><span class="type">GstGLImageSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>texture</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> id of the texture.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width of the texture.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> height of the texture.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GstGLImageSink-client-draw.returns"></a><h4>Returns</h4>
+<p> whether the texture was redrawn by the signal.  If not, a
+default redraw will occur.</p>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGLImageSink-client-reshape"></a><h3>The <code class="literal">“client-reshape”</code> signal</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink"><span class="type">GstGLImageSink</span></a> *object,
+               <a href="../html/GstGLContext.html#GstGLContext-struct"><span class="type">GstGLContext</span></a>   *width,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>           height,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>           Returns,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>The client should resize the surface/window/viewport with the <em class="parameter"><code>width</code></em>
+ and
+<em class="parameter"><code>height</code></em>
+ and return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="GstGLImageSink-client-reshape.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gst-plugins-base-plugins-glimagesinkelement.html#GstGLImageSink"><span class="type">GstGLImageSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width of the texture.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> height of the texture.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GstGLImageSink-client-reshape.returns"></a><h4>Returns</h4>
+<p> whether the content area was resized by the signal.  If not, a
+default viewport resize will occur.</p>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+Factory Details:
+  Rank                     none (0)
+  Long-name                NDI track data source
+  Klass                    Source
+  Description              Sends Track From Device
+  Author                   NDI
+
+Plugin Details:
+  Name                     ndielems
+  Description              NDI plugins
+  Filename                 C:\gstreamer\1.0\x86_64\lib\gstreamer-1.0\ndielems.dll
+  Version                  1.8.1
+  License                  LGPL
+  Source module            gstreamer
+  Source release date      2019-06-14
+  Binary package           GStreamer
+  Origin URL               http://gstreamer.net/
+
+GObject
+ +----GInitiallyUnowned
+       +----GstObject
+             +----GstElement
+                   +----GstBin
+                         +----GstTrackBin
+
+Implemented Interfaces:
+  GstChildProxy
+
+Pad Templates:
+  SRC template: 'src'
+    Availability: Always
+    Capabilities:
+      video/x-raw
+                 format: { (string)RGBx, (string)RGB, (string)BGR, (string)BGRx, (string)xRGB, (string)xBGR, (string)RGBA, (string)BGRA, (string)ARGB, (string)ABGR, (string)I420, (string)YV12, (string)AYUV, (string)YUY2, (string)UYVY, (string)v308, (string)v210, (string)v216, (string)Y41B, (string)Y42B, (string)Y444, (string)YVYU, (string)NV12, (string)NV21, (string)UYVP, (string)RGB16, (string)BGR16, (string)RGB15, (string)BGR15, (string)UYVP, (string)A420, (string)YUV9, (string)YVU9, (string)IYU1, (string)ARGB64, (string)AYUV64, (string)r210, (string)I420_10LE, (string)I420_10BE, (string)GRAY8, (string)GRAY16_BE, (string)GRAY16_LE }
+                  width: [ 1, 2147483647 ]
+                 height: [ 1, 2147483647 ]
+              framerate: [ 0/1, 2147483647/1 ]
+
+Element has no clocking capabilities.
+Element has no URI handling capabilities.
+
+Pads:
+  SRC: 'src'
+
+Element Properties:
+  name                : The name of the object
+                        flags: readable, writable
+                        String. Default: "trackbin0"
+  parent              : The parent of the object
+                        flags: readable, writable
+                        Object of type "GstObject"
+  async-handling      : The bin will handle Asynchronous state changes
+                        flags: readable, writable
+                        Boolean. Default: false
+  message-forward     : Forwards all children messages
+                        flags: readable, writable
+                        Boolean. Default: false
+  connect-to          : Name of NDI device to connect to
+                        flags: readable, writable
+                        String. Default: "P9-00311.local"
+  rtsp-port           : RTSP port for the video connection
+                        flags: readable, writable
+                        String. Default: "554"
+  tool-location       : Directory location of the tool files that will be loaded
+                        flags: readable, writable
+                        String. Default: "C:/Tool Definition Files/"
+  tool-file           : Name of a tool rom file to load
+                        flags: readable, writable
+                        String. Default: "8700339.rom"
+
+Children:
+  KLVTimeStampBin
+  H264VideoBin
+  VegaRTSPSource
+  NDITrackOverlay
+  NDItrackSource
+  TrackQueue
